@@ -1,439 +1,414 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="https://www.ebay.com/favicon.ico">
-  <title>300 (Blu-ray Disc, 2007) for sale online | eBay</title>
-  <style>
-    :root {
-      --ebay-blue: #0064d2;
-      --ebay-red: #e53238;
-      --ebay-yellow: #f5af02;
-      --ebay-green: #86b817;
-      --text-main: #191919;
-      --text-sub: #707070;
-      --border-color: #e5e5e5;
-      --bg-light: #f7f7f7;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBay Item: 300 (Blu-ray Disc, 2007) Brand New Sealed - Release Date July 31 2007</title>
+    <!-- Tailwind CSS for modern layout helper utility classes combined with classic eBay styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ebayYellow: '#f5af02',
+                        ebayBlue: '#0064d2',
+                        ebayRed: '#e53238',
+                        ebayGreen: '#86b817',
+                        ebayBg: '#f8f9fa',
+                        classicBlue: '#000066',
+                        classicYellow: '#ffcc00'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- JSON-LD Structured Data for the Product & Offer on eBay -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "300 (Blu-ray Disc, 2007)",
+        "image": [
+            "https://placehold.co/400x500/1a1a1a/ffffff?text=300+Blu-ray+Front+Cover"
+        ],
+        "description": "Brand new, factory sealed Blu-ray Disc copy of 300 (2007), starring Gerard Butler and directed by Zack Snyder. Released on July 31, 2007 by Warner Home Video.",
+        "sku": "085391161035",
+        "gtin12": "085391161035",
+        "brand": {
+            "@type": "Brand",
+            "name": "Warner Home Video"
+        },
+        "offers": {
+            "@type": "Offer",
+            "url": "https://www.ebay.com/itm/300-Blu-ray-Disc-2007-Brand-New/190134567890",
+            "priceCurrency": "USD",
+            "price": "24.99",
+            "priceValidUntil": "2007-08-07",
+            "itemCondition": "https://schema.org/NewCondition",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+                "@type": "Person",
+                "name": "cinephile_deals_2007"
+            }
+        },
+        "releaseDate": "2007-07-31"
     }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: "Market Sans", Helvetica, sans-serif;
-    }
-
-    body {
-      color: var(--text-main);
-      background-color: #fff;
-      font-size: 14px;
-      line-height: 1.4;
-    }
-
-    /* Top Utility Bar */
-    .top-bar {
-      border-bottom: 1px solid var(--border-color);
-      padding: 6px 32px;
-      font-size: 12px;
-      display: flex;
-      justify-content: space-between;
-      color: var(--text-sub);
-    }
-
-    .top-bar a {
-      color: var(--ebay-blue);
-      text-decoration: none;
-    }
-
-    /* Header & Search */
-    header {
-      padding: 12px 32px;
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    .logo {
-      font-weight: 900;
-      font-size: 28px;
-      letter-spacing: -1.5px;
-      text-decoration: none;
-      display: inline-block;
-    }
-
-    .logo .e { color: var(--ebay-red); }
-    .logo .b { color: var(--ebay-blue); }
-    .logo .a { color: var(--ebay-yellow); }
-    .logo .y { color: var(--ebay-green); }
-
-    .search-container {
-      display: flex;
-      flex-grow: 1;
-      max-width: 820px;
-    }
-
-    .search-input {
-      flex-grow: 1;
-      padding: 10px 14px;
-      font-size: 16px;
-      border: 2px solid var(--text-main);
-      border-right: none;
-      border-radius: 24px 0 0 24px;
-      outline: none;
-    }
-
-    .search-btn {
-      background-color: var(--ebay-blue);
-      color: #fff;
-      border: none;
-      padding: 0 28px;
-      font-weight: bold;
-      font-size: 14px;
-      border-radius: 0 24px 24px 0;
-      cursor: pointer;
-    }
-
-    /* Main Container */
-    .main-content {
-      max-width: 1280px;
-      margin: 20px auto;
-      padding: 0 20px;
-    }
-
-    /* Breadcrumbs */
-    .breadcrumbs {
-      font-size: 12px;
-      color: var(--text-sub);
-      margin-bottom: 16px;
-    }
-
-    .breadcrumbs a {
-      color: var(--text-sub);
-      text-decoration: none;
-    }
-
-    .breadcrumbs a:hover {
-      text-decoration: underline;
-    }
-
-    /* Listing Grid */
-    .listing-layout {
-      display: grid;
-      grid-template-columns: 420px 1fr 320px;
-      gap: 32px;
-      align-items: start;
-    }
-
-    /* Left: Gallery */
-    .gallery {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .main-image-wrap {
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      padding: 24px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #fafafa;
-    }
-
-    .movie-cover {
-      width: 240px;
-      height: 300px;
-      background: linear-gradient(135deg, #1f0404 0%, #4a1515 50%, #871c1c 100%);
-      color: #e5b95f;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      padding: 16px;
-      border-radius: 4px 10px 10px 4px;
-      box-shadow: -4px 6px 14px rgba(0,0,0,0.4);
-      position: relative;
-      border-left: 5px solid #002244;
-    }
-
-    .disc-banner {
-      font-size: 10px;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      font-weight: bold;
-      color: #9ac8eb;
-    }
-
-    .movie-title {
-      font-size: 64px;
-      font-weight: 900;
-      letter-spacing: -2px;
-      line-height: 1;
-      text-shadow: 2px 2px 4px #000;
-    }
-
-    .publisher-label {
-      font-size: 9px;
-      letter-spacing: 0.8px;
-      text-transform: uppercase;
-      color: #d1d1d1;
-    }
-
-    /* Center: Product Details */
-    .title-header h1 {
-      font-size: 22px;
-      line-height: 1.25;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
-    .rating-row {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 13px;
-      margin-bottom: 16px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid var(--border-color);
-    }
-
-    .stars {
-      color: #e5a93b;
-      letter-spacing: 2px;
-    }
-
-    .spec-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 13px;
-    }
-
-    .spec-table td {
-      padding: 8px 4px;
-      vertical-align: top;
-    }
-
-    .spec-label {
-      color: var(--text-sub);
-      width: 35%;
-    }
-
-    .spec-val {
-      font-weight: 500;
-    }
-
-    /* Right: Purchase Box */
-    .buy-box {
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      padding: 20px;
-      background: #fff;
-    }
-
-    .price-row {
-      margin-bottom: 12px;
-    }
-
-    .price-label {
-      font-size: 12px;
-      color: var(--text-sub);
-    }
-
-    .price-val {
-      font-size: 26px;
-      font-weight: 700;
-      color: var(--text-main);
-    }
-
-    .shipping-info {
-      font-size: 13px;
-      margin-bottom: 18px;
-      line-height: 1.5;
-    }
-
-    .btn {
-      display: block;
-      width: 100%;
-      padding: 12px;
-      font-size: 14px;
-      font-weight: 700;
-      text-align: center;
-      border-radius: 24px;
-      cursor: pointer;
-      margin-bottom: 8px;
-      border: 1px solid transparent;
-    }
-
-    .btn-buy {
-      background-color: var(--ebay-blue);
-      color: #fff;
-    }
-
-    .btn-buy:hover {
-      background-color: #0053b8;
-    }
-
-    .btn-cart {
-      background-color: #e3f0ff;
-      color: var(--ebay-blue);
-      border-color: var(--ebay-blue);
-    }
-
-    .btn-cart:hover {
-      background-color: #d1e5ff;
-    }
-
-    .btn-watchlist {
-      background-color: #fff;
-      color: var(--ebay-blue);
-      border-color: var(--ebay-blue);
-    }
-
-    .guarantee-badge {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      background: var(--bg-light);
-      padding: 10px;
-      border-radius: 6px;
-      font-size: 12px;
-      margin-top: 16px;
-    }
-
-    @media (max-width: 992px) {
-      .listing-layout {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+    </script>
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #333333;
+            font-family: Helvetica, sans-serif;
+            font-size: 12px;
+        }
+        .ebay-border {
+            border: 1px solid #d6d6d6;
+        }
+        .ebay-header-bg {
+            background: linear-gradient(to bottom, #ffffff 0%, #f0f0f0 100%);
+        }
+        .classic-button {
+            background: linear-gradient(to bottom, #f8f8f8 0%, #e5e5e5 100%);
+            border: 1px solid #999;
+            border-radius: 3px;
+            font-weight: bold;
+            color: #333;
+        }
+        .classic-button:hover {
+            background: linear-gradient(to bottom, #f0f0f0 0%, #dcdcdc 100%);
+        }
+        .bid-button {
+            background: linear-gradient(to bottom, #0070ba 0%, #005ea6 100%);
+            color: white;
+            border: 1px solid #004b87;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .bid-button:hover {
+            background: linear-gradient(to bottom, #005ea6 0%, #004b87 100%);
+        }
+    </style>
 </head>
-<body>
+<body class="bg-white min-h-screen">
 
-  <div class="top-bar">
-    <div>Hi! <a href="#">Sign in</a> or <a href="#">register</a> | <a href="#">Daily Deals</a> | <a href="#">Help & Contact</a></div>
-    <div><a href="#">Ship to</a> | <a href="#">Sell</a> | <a href="#">Watchlist</a> | <a href="#">My eBay</a></div>
-  </div>
-
-  <header>
-    <a href="#" class="logo">
-      <span class="e">e</span><span class="b">b</span><span class="a">a</span><span class="y">y</span>
-    </a>
-    <div class="search-container">
-      <input type="text" class="search-input" value="300 blu ray 2007 warner home video">
-      <button class="search-btn">Search</button>
+    <!-- Top Notice Bar (Historical Context: July 31, 2007) -->
+    <div class="bg-amber-100 border-b border-amber-300 px-4 py-1.5 text-center text-[11px] text-amber-900 font-medium">
+        📅 <strong>Historical Archive View:</strong> July 31, 2007 – Release Day of the <em>300</em> Blu-ray Disc in the United States!
     </div>
-  </header>
 
-  <main class="main-content">
-    <nav class="breadcrumbs">
-      <a href="#">Movies & TV</a> &gt; <a href="#">DVDs & Blu-ray Discs</a> &gt; <a href="#">Blu-ray Discs</a>
-    </nav>
+    <!-- eBay 2007 Header Navigation -->
+    <header class="border-b border-gray-300 bg-white px-4 py-3">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <!-- Logo & Tagline -->
+            <div class="flex items-center gap-3">
+                <a href="#" class="flex items-center text-decoration-none">
+                    <span class="text-3xl font-black italic tracking-tighter">
+                        <span class="text-ebayRed">e</span><span class="text-ebayBlue">b</span><span class="text-ebayYellow">a</span><span class="text-ebayGreen">y</span>
+                    </span>
+                </a>
+                <span class="text-xs text-gray-500 hidden sm:inline">United States</span>
+            </div>
 
-    <div class="listing-layout">
-      <!-- Media Gallery -->
-      <section class="gallery">
-        <div class="main-image-wrap">
-          <div class="movie-cover">
-            <span class="disc-banner">Blu-ray Disc</span>
-            <div class="movie-title">300</div>
-            <span class="publisher-label">Warner Home Video</span>
-          </div>
-        </div>
-      </section>
+            <!-- Search Bar 2007 Style -->
+            <div class="flex items-center w-full md:w-auto max-w-xl flex-1 justify-center">
+                <div class="flex border-2 border-ebayBlue rounded-md overflow-hidden w-full max-w-lg">
+                    <input type="text" value="300 blu-ray" class="px-3 py-1.5 w-full outline-none text-sm text-gray-800" aria-label="Search">
+                    <select class="bg-gray-100 border-l border-gray-300 px-2 text-xs text-gray-700 outline-none hidden sm:block">
+                        <option>All Categories</option>
+                        <option selected>DVDs & Movies</option>
+                    </select>
+                    <button class="bg-ebayBlue text-white px-5 py-1.5 font-bold text-sm hover:bg-blue-700 transition">Search</button>
+                </div>
+            </div>
 
-      <!-- Center Listing Info -->
-      <section class="details">
-        <div class="title-header">
-          <h1>300 (Blu-ray Disc, 2007) - Warner Home Video</h1>
-        </div>
-
-        <div class="rating-row">
-          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-          <span><strong>4.8</strong> out of 5 stars (182 product ratings)</span>
-        </div>
-
-        <h3 style="margin-bottom: 8px;">Item specifics</h3>
-        <table class="spec-table">
-          <tbody>
-            <tr>
-              <td class="spec-label">Condition:</td>
-              <td class="spec-val">Very Good</td>
-            </tr>
-            <tr>
-              <td class="spec-label">Movie Title:</td>
-              <td class="spec-val">300</td>
-            </tr>
-            <tr>
-              <td class="spec-label">Format:</td>
-              <td class="spec-val">Blu-ray</td>
-            </tr>
-            <tr>
-              <td class="spec-label">Release Date:</td>
-              <td class="spec-val">2007-07-31</td>
-            </tr>
-            <tr>
-              <td class="spec-label">Studio / Publisher:</td>
-              <td class="spec-val">Warner Home Video</td>
-            </tr>
-            <tr>
-              <td class="spec-label">Director:</td>
-              <td class="spec-val">Zack Snyder</td>
-            </tr>
-            <tr>
-              <td class="spec-label">Genre:</td>
-              <td class="spec-val">Action & Adventure, Historical Drama</td>
-            </tr>
-            <tr>
-              <td class="spec-label">Rating:</td>
-              <td class="spec-val">R</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <!-- Purchase Sidebar -->
-      <aside class="buy-box">
-        <div class="price-row">
-          <div class="price-label">Price:</div>
-          <div class="price-val">US $6.99</div>
+            <!-- Quick Links -->
+            <div class="flex items-center gap-4 text-xs text-gray-600 whitespace-nowrap">
+                <span>Hi, <b class="text-ebayBlue">collector_us77</b> (<a href="#" class="text-ebayBlue underline">Sign out</a>)</span>
+                <span class="text-gray-300">|</span>
+                <a href="#" class="hover:underline">My eBay</a>
+                <span class="text-gray-300">|</span>
+                <a href="#" class="hover:underline">Community</a>
+            </div>
         </div>
 
-        <div class="shipping-info">
-          <div><strong>Shipping:</strong> US $3.99 Economy Shipping</div>
-          <div style="color: var(--text-sub); font-size: 11px;">Located in: United States</div>
-          <div><strong>Delivery:</strong> Estimated within 3-5 business days</div>
+        <!-- Sub Navigation Bar -->
+        <div class="max-w-6xl mx-auto mt-3 pt-2 border-t border-gray-200 flex flex-wrap gap-6 text-xs font-semibold text-gray-700">
+            <a href="#" class="hover:text-ebayBlue">Buy</a>
+            <a href="#" class="hover:text-ebayBlue">Sell</a>
+            <a href="#" class="hover:text-ebayBlue">My eBay</a>
+            <a href="#" class="hover:text-ebayBlue">Help Center</a>
+            <span class="text-gray-300">|</span>
+            <a href="#" class="text-ebayBlue hover:underline">Movies & TV &gt; Blu-ray Discs</a>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-6xl mx-auto px-4 py-4">
+
+        <!-- Item Status Notification / Breadcrumb & Actions Header -->
+        <div class="bg-gray-100 ebay-border p-2 mb-4 flex flex-wrap items-center justify-between text-xs rounded">
+            <div class="flex items-center gap-2">
+                <span class="bg-green-700 text-white font-bold px-2 py-0.5 rounded text-[10px]">Active Listing</span>
+                <span class="text-gray-700">Item number: 190134567890</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="#" class="text-ebayBlue hover:underline flex items-center gap-1">⭐ Watch this item</a>
+                <span class="text-gray-300">|</span>
+                <a href="#" class="text-ebayBlue hover:underline">📧 Email to a friend</a>
+                <span class="text-gray-300">|</span>
+                <a href="#" class="text-ebayBlue hover:underline">🖨️ Print view</a>
+            </div>
         </div>
 
-        <button class="btn btn-buy" id="btnBuyNow">Buy It Now</button>
-        <button class="btn btn-cart" id="btnAddToCart">Add to cart</button>
-        <button class="btn btn-watchlist" id="btnWatchlist">&#9825; Add to Watchlist</button>
-
-        <div class="guarantee-badge">
-          <div>&#128737;</div>
-          <div><strong>eBay Money Back Guarantee</strong><br>Get the item you ordered or your money back.</div>
+        <!-- Title Banner -->
+        <div class="mb-4">
+            <h1 class="text-xl font-bold text-gray-900">
+                300 (Blu-ray Disc, 2007) BRAND NEW SEALED - FAST SHIPPING!
+            </h1>
+            <p class="text-gray-500 text-xs mt-0.5">
+                Release Date: July 31, 2007 | UPC / Barcode: 085391161035 | Director: Zack Snyder | Starring: Gerard Butler
+            </p>
         </div>
-      </aside>
-    </div>
-  </main>
 
-  <script>
-    document.getElementById('btnBuyNow').addEventListener('click', () => {
-      alert('Redirecting to secure eBay checkout for "300 (Blu-ray, 2007)"...');
-    });
+        <!-- Main Grid: Left (Images & Details), Right (Bidding / Buying Box) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
 
-    document.getElementById('btnAddToCart').addEventListener('click', () => {
-      alert('"300 (Blu-ray, 2007)" added to your cart.');
-    });
+            <!-- Left Column: Images and Item Specifics (7 Cols) -->
+            <div class="lg:col-span-7 space-y-4">
+                
+                <!-- Image Gallery Box -->
+                <div class="ebay-border bg-gray-50 p-4 rounded flex flex-col items-center">
+                    <div class="relative w-full max-w-sm bg-black border border-gray-400 p-2 shadow-inner flex justify-center items-center">
+                        <!-- Blu-ray Case Simulation -->
+                        <div class="bg-gradient-to-r from-blue-900 to-blue-950 p-3 w-72 h-96 text-white flex flex-col justify-between shadow-2xl relative border-2 border-blue-400/40 rounded-sm">
+                            <!-- Blu-ray top banner -->
+                            <div class="text-center border-b border-blue-700/60 pb-1">
+                                <span class="text-[10px] tracking-widest font-bold uppercase text-blue-200">Blu-ray Disc High Definition</span>
+                            </div>
+                            <!-- Cover Art Placeholder / Mock -->
+                            <div class="text-center my-auto">
+                                <div class="inline-block border border-amber-600/50 p-4 bg-black/60 rounded">
+                                    <h2 class="text-4xl font-black italic tracking-wider text-amber-500 drop-shadow-lg">300</h2>
+                                    <p class="text-[10px] uppercase tracking-widest mt-1 text-gray-300">Prepare for Glory</p>
+                                </div>
+                                <p class="text-[9px] text-gray-400 mt-4">Warner Home Video • 117 Minutes</p>
+                            </div>
+                            <!-- Bottom Barcode & Warner Logo -->
+                            <div class="flex justify-between items-end text-[9px] text-gray-400 border-t border-blue-700/60 pt-1">
+                                <span>UPC: 085391161035</span>
+                                <span class="font-bold">BD-ROM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center text-xs text-gray-500 mt-2">✨ Supersized Image Available (Click photo to enlarge in new window)</p>
+                </div>
 
-    const watchlistBtn = document.getElementById('btnWatchlist');
-    let isWatched = false;
-    watchlistBtn.addEventListener('click', () => {
-      isWatched = !isWatched;
-      watchlistBtn.innerHTML = isWatched ? '&#9829; Saved to Watchlist' : '&#9825; Add to Watchlist';
-    });
-  </script>
+                <!-- Item Specifics Table -->
+                <div class="ebay-border bg-white rounded p-4">
+                    <h3 class="font-bold text-sm border-b pb-2 mb-3 text-gray-800">Item Specifics - Movie Details</h3>
+                    <div class="grid grid-cols-2 gap-y-2 text-xs">
+                        <div class="text-gray-500 font-semibold">Genre</div>
+                        <div class="text-gray-800">Action, Adventure, Epic</div>
+                        
+                        <div class="text-gray-500 font-semibold">Format</div>
+                        <div class="text-gray-800">Blu-ray Disc</div>
+
+                        <div class="text-gray-500 font-semibold">Release Date</div>
+                        <div class="text-gray-800 font-bold text-ebayBlue">07/31/2007 (Street Date)</div>
+
+                        <div class="text-gray-500 font-semibold">Rating</div>
+                        <div class="text-gray-800">R (Graphic Battle Sequences, Sexuality)</div>
+
+                        <div class="text-gray-500 font-semibold">UPC / Barcode</div>
+                        <div class="text-gray-800 font-mono">085391161035</div>
+
+                        <div class="text-gray-500 font-semibold">Leading Role</div>
+                        <div class="text-gray-800">Gerard Butler, Lena Headey</div>
+
+                        <div class="text-gray-500 font-semibold">Director</div>
+                        <div class="text-gray-800">Zack Snyder</div>
+
+                        <div class="text-gray-500 font-semibold">Condition</div>
+                        <div class="text-gray-800 font-bold text-green-700">Brand New, Factory Sealed</div>
+                    </div>
+                </div>
+
+                <!-- Description Box -->
+                <div class="ebay-border bg-white rounded p-4">
+                    <h3 class="font-bold text-sm border-b pb-2 mb-3 text-gray-800">Description</h3>
+                    <div class="space-y-3 text-xs text-gray-700 leading-relaxed font-sans">
+                        <p class="font-bold text-gray-900">You are bidding on / buying the brand new, factory sealed Blu-ray Disc of the blockbuster hit <em>300</em> (Released on July 31, 2007)!</p>
+                        <p>Experience Zack Snyder’s visual masterpiece in pristine 1080p high definition with Dolby TrueHD lossless audio. This item was purchased directly on release day. Never opened, pristine collector’s condition with crisp original shrinkwrap and intact UPC (085391161035).</p>
+                        <p class="font-semibold text-gray-900">Special Features Include:</p>
+                        <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                            <li>The Theatrical Cut in High Definition</li>
+                            <li>Webisode: The Making of <em>300</em></li>
+                            <li>Webisode: Production Design</li>
+                            <li>Deleted Scenes with Director Commentary</li>
+                            <li>The Frank Miller Vision & More!</li>
+                        </ul>
+                        <p class="mt-2 text-gray-500 italic">Ships securely in a dedicated cardboard mailer within 24 hours of payment via USPS First Class or Priority Mail.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Bidding / Pricing Panel (5 Cols) -->
+            <div class="lg:col-span-5 space-y-4">
+                
+                <!-- Main Bid/Buy Box -->
+                <div class="ebay-border bg-gradient-to-b from-gray-50 to-gray-100 rounded p-4 shadow-sm">
+                    <div class="border-b pb-3 mb-3">
+                        <div class="flex justify-between items-baseline">
+                            <span class="text-gray-600 text-xs">Starting Bid:</span>
+                            <span class="text-xl font-black text-gray-900">$14.99</span>
+                        </div>
+                        <div class="flex justify-between items-baseline mt-1">
+                            <span class="text-ebayBlue font-bold text-sm">Buy It Now Price:</span>
+                            <span class="text-2xl font-black text-ebayBlue" id="buyItNowPrice">$24.99</span>
+                        </div>
+                        <div class="flex justify-between items-baseline mt-2 text-xs text-gray-500">
+                            <span>Time left:</span>
+                            <span class="font-bold text-red-600" id="countdownTimer">3 days 14 hours (Aug 04, 2007)</span>
+                        </div>
+                        <div class="flex justify-between items-baseline mt-1 text-xs text-gray-500">
+                            <span>History:</span>
+                            <span><a href="#" class="text-ebayBlue underline" id="bidCount">0 bids</a></span>
+                        </div>
+                        <div class="flex justify-between items-baseline mt-1 text-xs text-gray-500">
+                            <span>Item location:</span>
+                            <span>Los Angeles, California, United States</span>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Bid / Buy Form Simulation -->
+                    <div class="space-y-3 bg-white p-3 ebay-border rounded">
+                        <div class="space-y-1">
+                            <label for="bidAmount" class="block text-xs font-bold text-gray-700">Enter your bid or purchase:</label>
+                            <div class="flex gap-2">
+                                <div class="relative flex-1">
+                                    <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-500 text-xs">$</span>
+                                    <input type="text" id="bidAmount" value="14.99" class="w-full pl-6 pr-3 py-1.5 text-xs border border-gray-300 rounded focus:ring-1 focus:ring-ebayBlue outline-none">
+                                </div>
+                                <button onclick="placeBid()" class="bid-button px-4 py-1.5 text-xs shadow">Place Bid</button>
+                            </div>
+                            <p class="text-[10px] text-gray-500 mt-1">Enter $14.99 or more.</p>
+                        </div>
+
+                        <div class="pt-2 border-t border-gray-200">
+                            <button onclick="buyItNow()" class="w-full bg-gradient-to-b from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-2 px-4 rounded text-xs shadow transition flex items-center justify-center gap-2">
+                                <span>🛒 Buy It Now for $24.99</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Feedback & Message Box for Simulation -->
+                    <div id="actionFeedback" class="hidden mt-3 p-2 bg-green-50 border border-green-300 text-green-800 text-xs rounded text-center font-medium">
+                        <!-- Dynamic status messages will appear here -->
+                    </div>
+
+                    <!-- Shipping & Payment Options -->
+                    <div class="mt-4 pt-3 border-t text-xs space-y-2 text-gray-600">
+                        <div class="flex justify-between">
+                            <span class="font-semibold">Shipping:</span>
+                            <span>$3.00 USPS Media Mail / $5.50 Priority</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="font-semibold">Ships to:</span>
+                            <span>United States</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="font-semibold">Payments:</span>
+                            <span class="text-ebayBlue font-medium">PayPal, Money Order, Personal Check</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="font-semibold">Returns:</span>
+                            <span>No returns accepted (Item is brand new & sealed)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seller Information Box -->
+                <div class="ebay-border bg-white rounded p-4">
+                    <h3 class="font-bold text-sm border-b pb-2 mb-2 text-gray-800">About the Seller</h3>
+                    <div class="space-y-2 text-xs">
+                        <div class="flex items-center justify-between">
+                            <span class="font-bold text-ebayBlue text-sm">cinephile_deals_2007</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded font-bold text-[10px]">★ PowerSeller</span>
+                        </div>
+                        <div class="text-gray-600">
+                            Feedback Score: <strong class="text-gray-900">1,482</strong>
+                            <span class="text-green-600 font-bold">(99.4% Positive)</span>
+                        </div>
+                        <p class="text-gray-500">Member since Feb 12, 2004 in United States</p>
+                        <div class="pt-2 flex gap-3">
+                            <a href="#" class="text-ebayBlue hover:underline">View seller's other items</a>
+                            <span class="text-gray-300">|</span>
+                            <a href="#" class="text-ebayBlue hover:underline">Ask a question</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Safe Trading Guarantee -->
+                <div class="bg-blue-50 border border-blue-200 rounded p-3 text-xs text-blue-900 space-y-1">
+                    <p class="font-bold flex items-center gap-1">🛡️ eBay Buyer Protection</p>
+                    <p class="text-[11px] text-blue-800">Get the item you ordered or get your money back. Up to $2,000 coverage included with PayPal.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- eBay 2007 Footer -->
+    <footer class="mt-12 border-t border-gray-300 bg-gray-100 py-6 text-center text-xs text-gray-500">
+        <div class="max-w-6xl mx-auto px-4 space-y-3">
+            <div class="flex flex-wrap justify-center gap-4 text-ebayBlue font-medium">
+                <a href="#" class="hover:underline">About eBay</a>
+                <a href="#" class="hover:underline">Announcements</a>
+                <a href="#" class="hover:underline">Security Center</a>
+                <a href="#" class="hover:underline">Policies</a>
+                <a href="#" class="hover:underline">Site Map</a>
+                <a href="#" class="hover:underline">Help</a>
+            </div>
+            <p>Copyright © 1995-2007 eBay Inc. All Rights Reserved. Designated trademarks and brands are the property of their respective owners.</p>
+            <p class="text-[10px] text-gray-400">Use of this Web site constitutes acceptance of the eBay User Agreement and Privacy Policy.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Retro Interactive Elements -->
+    <script>
+        let bidCountValue = 0;
+
+        function placeBid() {
+            const amountInput = document.getElementById('bidAmount').value;
+            const feedback = document.getElementById('actionFeedback');
+            const bidCountEl = document.getElementById('bidCount');
+            
+            let val = parseFloat(amountInput);
+            if (isNaN(val) || val < 14.99) {
+                feedback.className = "mt-3 p-2 bg-red-50 border border-red-300 text-red-800 text-xs rounded text-center font-medium";
+                feedback.innerText = "⚠️ Please enter a bid of $14.99 or higher.";
+                feedback.classList.remove('hidden');
+                return;
+            }
+
+            bidCountValue++;
+            bidCountEl.innerText = bidCountValue + (bidCountValue === 1 ? " bid" : " bids");
+            
+            feedback.className = "mt-3 p-2 bg-green-50 border border-green-300 text-green-800 text-xs rounded text-center font-medium";
+            feedback.innerText = "🎉 Success! Your bid of $" + val.toFixed(2) + " has been placed. You are currently the high bidder!";
+            feedback.classList.remove('hidden');
+        }
+
+        function buyItNow() {
+            const feedback = document.getElementById('actionFeedback');
+            feedback.className = "mt-3 p-2 bg-blue-50 border border-blue-300 text-blue-900 text-xs rounded text-center font-medium";
+            feedback.innerText = "🛒 Congratulations! You have successfully committed to Buy It Now for $24.99. Redirecting to eBay Checkout (PayPal)...";
+            feedback.classList.remove('hidden');
+        }
+    </script>
 </body>
 </html>
