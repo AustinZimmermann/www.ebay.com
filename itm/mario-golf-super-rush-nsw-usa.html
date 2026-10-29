@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mario Golf: Super Rush - Nintendo Switch (Authentic USA Version, Complete in Box) | eBay</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Phosphor Icons for eBay UI icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ebayBlue: '#0053a0',
+            ebayBlueHover: '#003e7a',
+            ebayRed: '#e53238',
+            ebayYellow: '#f5af02',
+            ebayGreen: '#86b817',
+            ebayBg: '#f7f7f7',
+            ebayDarkText: '#191919',
+            ebayMuted: '#707070',
+            ebayBorder: '#e5e5e5',
+            ebayLightBlue: '#e8f0fe'
+          },
+          fontFamily: {
+            sans: ['"Market Sans"', 'Helvetica', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Custom styling for precise eBay feel */
+    body {
+      color: #191919;
+      background-color: #ffffff;
+      -webkit-font-smoothing: antialiased;
+    }
+    .ebay-logo-e { color: #e53238; }
+    .ebay-logo-b { color: #0064d2; }
+    .ebay-logo-a { color: #f5af02; }
+    .ebay-logo-y { color: #86b817; }
+    .btn-buy-now {
+      background-color: #3470e4;
+      transition: background-color 0.15s ease-in-out;
+    }
+    .btn-buy-now:hover {
+      background-color: #1b53c7;
+    }
+    .btn-add-cart {
+      background-color: #dbeafe;
+      color: #1e40af;
+      border: 1px solid #bfdbfe;
+    }
+    .btn-add-cart:hover {
+      background-color: #bfdbfe;
+    }
+    .tab-active {
+      border-bottom: 3px solid #191919;
+      font-weight: 700;
+      color: #191919;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      height: 4px;
+      width: 4px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 4px;
+    }
+  </style>
+
+  <!-- JSON-LD Structured Data for eBay Product Listing -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Mario Golf: Super Rush - Nintendo Switch",
+    "image": [
+      "https://austinzironic.github.io/www.ebay.com/images/mario-golf-super-rush-nsw-usa/front.png",
+      "https://austinzironic.github.io/www.ebay.com/images/mario-golf-super-rush-nsw-usa/back.png"
+    ],
+    "description": "Mario Golf: Super Rush for Nintendo Switch. Original North American release, complete in box (CIB) with original artwork, tested and fully functional. Release date: June 25, 2021.",
+    "sku": "EBAY-US-MGSR-2021",
+    "gtin13": "0045496597794",
+    "releaseDate": "2021-06-25",
+    "brand": {
+      "@type": "Brand",
+      "name": "Nintendo"
+    },
+    "category": "Video Games & Consoles > Video Games",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ebay.com/itm/394819201948",
+      "priceCurrency": "USD",
+      "price": "39.99",
+      "priceValidUntil": "2027-12-31",
+      "itemCondition": "https://schema.org/UsedCondition",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": "RetroNextGen_Vault",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "99.8",
+          "reviewCount": "14280",
+          "bestRating": "100"
+        }
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "4.25",
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "d"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 2,
+            "maxValue": 4,
+            "unitCode": "d"
+          }
+        }
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "184",
+      "bestRating": "5"
+    }
+  }
+  </script>
+</head>
+<body class="text-sm">
+
+  <!-- Toast Notification Box for Actions -->
+  <div id="toast" class="fixed top-5 right-5 z-50 transform translate-x-full transition-all duration-300 bg-gray-900 text-white px-5 py-3 rounded-lg shadow-xl flex items-center space-x-3 pointer-events-none">
+    <i id="toast-icon" class="ph-bold ph-check-circle text-green-400 text-xl"></i>
+    <span id="toast-message" class="text-sm font-medium">Added to cart!</span>
+  </div>
+
+  <!-- Top Utilities Header -->
+  <header class="border-b border-ebayBorder text-xs text-ebayDarkText">
+    <div class="max-w-7xl mx-auto px-4 py-1.5 flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <span>Hi <strong>Gamer_Alex</strong>! (<a href="#" class="text-ebayBlue hover:underline">Sign out</a>)</span>
+        <span class="hidden md:inline text-gray-300">|</span>
+        <a href="#" class="hidden md:inline hover:underline text-gray-600">Daily Deals</a>
+        <a href="#" class="hidden md:inline hover:underline text-gray-600">Help & Contact</a>
+      </div>
+      <div class="flex items-center space-x-5 text-gray-600">
+        <a href="#" class="hover:underline flex items-center gap-1">
+          <i class="ph-bold ph-truck text-sm"></i>
+          <span>Ship to <strong>90210</strong></span>
+        </a>
+        <a href="#" class="hover:underline hidden sm:inline">Sell</a>
+        <div class="relative group cursor-pointer">
+          <span class="flex items-center hover:underline">Watchlist <i class="ph-bold ph-caret-down text-[10px] ml-0.5"></i></span>
+        </div>
+        <div class="relative group cursor-pointer">
+          <span class="flex items-center hover:underline">My eBay <i class="ph-bold ph-caret-down text-[10px] ml-0.5"></i></span>
+        </div>
+        <a href="#" class="relative hover:text-black">
+          <i class="ph-bold ph-bell text-base"></i>
+        </a>
+        <a href="javascript:void(0)" onclick="openCartModal()" class="relative hover:text-black flex items-center">
+          <i class="ph-bold ph-shopping-cart text-lg"></i>
+          <span id="cart-counter" class="absolute -top-1.5 -right-2 bg-ebayBlue text-white rounded-full text-[10px] font-bold w-4 h-4 flex items-center justify-center">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search & Brand Bar -->
+  <div class="border-b border-ebayBorder py-3 bg-white">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-4">
+      <!-- eBay Logo -->
+      <a href="#" class="flex items-center text-3xl font-black tracking-tighter self-start md:self-auto select-none">
+        <span class="ebay-logo-e">e</span><span class="ebay-logo-b">b</span><span class="ebay-logo-a">a</span><span class="ebay-logo-y">y</span>
+      </a>
+
+      <!-- Category dropdown + Search bar -->
+      <div class="flex-1 w-full flex items-center border-2 border-ebayDarkText rounded-full overflow-hidden hover:border-black transition">
+        <div class="relative hidden lg:flex items-center pl-4 pr-2 text-xs font-semibold text-gray-700 bg-gray-50 border-r border-gray-200 h-10 cursor-pointer">
+          <span>Shop by category</span>
+          <i class="ph-bold ph-caret-down text-[10px] ml-1 text-gray-500"></i>
+        </div>
+        <div class="flex-1 flex items-center px-3">
+          <i class="ph-bold ph-magnifying-glass text-gray-400 text-lg mr-2"></i>
+          <input 
+            type="text" 
+            value="Mario Golf: Super Rush Nintendo Switch" 
+            class="w-full text-sm outline-none bg-transparent placeholder-gray-500"
+            placeholder="Search for anything"
+          />
+        </div>
+        <div class="hidden sm:flex items-center border-l border-gray-300 px-3 bg-gray-50 h-10 text-xs text-gray-700">
+          <span>Video Games</span>
+          <i class="ph-bold ph-caret-down text-[10px] ml-1 text-gray-500"></i>
+        </div>
+        <button class="bg-ebayBlue hover:bg-ebayBlueHover text-white px-8 h-10 font-semibold text-sm transition">
+          Search
+        </button>
+      </div>
+      
+      <div class="hidden lg:block text-xs text-ebayBlue hover:underline cursor-pointer">
+        Advanced
+      </div>
+    </div>
+  </div>
+
+  <!-- Breadcrumbs -->
+  <nav class="max-w-7xl mx-auto px-4 py-2 text-xs text-gray-500 flex items-center space-x-1.5 flex-wrap">
+    <a href="#" class="hover:underline">Home</a>
+    <i class="ph-bold ph-caret-right text-[9px] text-gray-400"></i>
+    <a href="#" class="hover:underline">Video Games & Consoles</a>
+    <i class="ph-bold ph-caret-right text-[9px] text-gray-400"></i>
+    <a href="#" class="hover:underline">Video Games</a>
+    <i class="ph-bold ph-caret-right text-[9px] text-gray-400"></i>
+    <span class="text-gray-700 font-medium truncate max-w-xs md:max-w-md">Mario Golf: Super Rush (Nintendo Switch)</span>
+  </nav>
+
+  <!-- Main Listing Container -->
+  <main class="max-w-7xl mx-auto px-4 py-4">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      
+      <!-- LEFT COLUMN: Gallery & Interactive Photos (5 cols) -->
+      <div class="lg:col-span-5 flex flex-col space-y-4">
+        <!-- Main Stage Image Container with Magnifier effect simulated -->
+        <div class="relative border border-ebayBorder rounded-xl p-4 bg-gray-50 flex items-center justify-center min-h-[380px] max-h-[500px] overflow-hidden group">
+          <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded text-[11px] font-semibold text-gray-700 shadow-sm border border-gray-200 z-10">
+            Actual Item Photo
+          </div>
+          
+          <button id="favorite-btn" onclick="toggleWatchlist()" class="absolute top-3 right-3 p-2 bg-white rounded-full shadow-md text-gray-600 hover:text-ebayRed transition z-10" title="Add to watchlist">
+            <i id="fav-icon" class="ph-bold ph-heart text-lg"></i>
+          </button>
+
+          <!-- Main Dynamic Image -->
+          <img 
+            id="main-product-img" 
+            src="https://austinzironic.github.io/www.ebay.com/images/mario-golf-super-rush-nsw-usa/front.png" 
+            alt="Mario Golf: Super Rush Front Cover and Case" 
+            class="max-h-[420px] w-auto object-contain transition-transform duration-300 group-hover:scale-105 select-none"
+           />
+          
+          <!-- Zoom indicator -->
+          <div class="absolute bottom-3 right-3 text-xs bg-white/90 px-2 py-1 rounded border text-gray-500 flex items-center gap-1 shadow-sm">
+            <i class="ph-bold ph-magnifying-glass-plus"></i> Mouse over to zoom
+          </div>
+        </div>
+
+        <!-- Thumbnails Strip -->
+        <div class="flex items-center space-x-3 overflow-x-auto pb-2 custom-scroll">
+          <button onclick="changePhoto(0, this)" class="thumbnail-btn border-2 border-ebayBlue rounded-lg p-1 bg-white flex-shrink-0 w-16 h-16 flex items-center justify-center transition">
+            <img src="https://austinzironic.github.io/www.ebay.com/images/mario-golf-super-rush-nsw-usa/front.png" alt="Box Front" class="max-h-full object-contain">
+          </button>
+          <button onclick="changePhoto(1, this)" class="thumbnail-btn border border-gray-200 hover:border-gray-400 rounded-lg p-1 bg-white flex-shrink-0 w-16 h-16 flex items-center justify-center transition">
+            <img src="https://austinzironic.github.io/www.ebay.com/images/mario-golf-super-rush-nsw-usa/back.png" alt="Box Back" class="max-h-full object-contain">
+          </button>
+        </div>
+
+        <div class="text-xs text-gray-500 flex justify-between pt-1">
+          <span>Photos 100% of the actual item for sale</span>
+          <span class="text-ebayBlue hover:underline cursor-pointer">Report item</span>
+        </div>
+      </div>
+
+      <!-- CENTER / RIGHT COLUMN: Title, Pricing & Purchasing (7 cols) -->
+      <div class="lg:col-span-7 flex flex-col space-y-4">
+        
+        <!-- Header Info -->
+        <div>
+          <h1 class="text-xl md:text-2xl font-bold tracking-tight text-gray-900 leading-snug">
+            Mario Golf: Super Rush - Nintendo Switch (Authentic USA Game, Complete In Box CIB)
+          </h1>
+          <div class="mt-2 flex flex-wrap items-center gap-3 text-xs">
+            <div class="flex items-center text-amber-500">
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <span class="ml-1 text-gray-800 font-semibold">4.8</span>
+              <a href="#reviews" class="ml-1 text-ebayBlue hover:underline">(184 product reviews)</a>
+            </div>
+            <span class="text-gray-300">|</span>
+            <span class="text-gray-600 font-medium">Item number: <span class="text-gray-800">394819201948</span></span>
+            <span class="text-gray-300">|</span>
+            <span class="text-ebayRed font-semibold flex items-center gap-1">
+              <i class="ph-fill ph-fire text-ebayRed"></i> 14 people watching this right now
+            </span>
+          </div>
+        </div>
+
+        <hr class="border-ebayBorder">
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+          
+          <!-- Buying Block (Left inside Col) -->
+          <div class="md:col-span-7 space-y-4">
+            
+            <!-- Condition -->
+            <div class="flex items-baseline space-x-3">
+              <span class="text-gray-500 text-xs w-20">Condition:</span>
+              <div>
+                <span class="font-bold text-gray-900">Very Good</span>
+                <p class="text-xs text-gray-500 mt-0.5">Original case & artwork intact. Clean contacts, tested & verified working perfectly.</p>
+              </div>
+            </div>
+
+            <!-- Price Breakdown -->
+            <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
+              <div class="flex items-baseline justify-between">
+                <span class="text-xs text-gray-500">Buy It Now Price:</span>
+                <span class="text-xs font-semibold text-green-700 bg-green-100 px-2 py-0.5 rounded">Fast 2-Day Shipping</span>
+              </div>
+
+              <div class="mt-2 flex items-baseline gap-2">
+                <span class="text-3xl font-bold text-gray-900">US $39.99</span>
+                <span class="text-xs text-gray-500 line-through">$59.99</span>
+                <span class="text-xs font-semibold text-ebayRed">33% off MSRP</span>
+              </div>
+              <p class="text-xs text-gray-500 mt-1">Or 4 interest-free payments of $10.00 with <span class="font-semibold text-blue-900">Klarna</span> or <span class="font-semibold text-blue-600">PayPal</span></p>
+
+              <!-- Action CTAs -->
+              <div class="mt-4 flex flex-col space-y-2">
+                <button onclick="handleBuyNow()" class="w-full btn-buy-now text-white font-semibold py-3 px-4 rounded-full text-center text-sm shadow hover:shadow-md transition">
+                  Buy It Now
+                </button>
+                <button onclick="handleAddToCart()" class="w-full btn-add-cart font-semibold py-2.5 px-4 rounded-full text-center text-sm transition">
+                  Add to cart
+                </button>
+                <button id="watchlist-button" onclick="toggleWatchlist()" class="w-full bg-white border border-gray-300 hover:border-gray-500 text-gray-700 font-semibold py-2.5 px-4 rounded-full text-center text-sm flex items-center justify-center gap-2 transition">
+                  <i class="ph-bold ph-heart text-ebayRed"></i>
+                  <span id="watchlist-btn-text">Add to Watchlist</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Shipping, Delivery & Returns info -->
+            <div class="text-xs space-y-3 pt-2 text-gray-700">
+              <div class="flex items-start">
+                <span class="text-gray-500 w-20 flex-shrink-0">Shipping:</span>
+                <div>
+                  <span class="font-semibold text-gray-900">US $4.25</span> USPS Ground Advantage®.
+                  <p class="text-gray-500">Located in: Orlando, Florida, United States</p>
+                  <p class="text-gray-500">Ships to: United States and many other countries via eBay International Shipping.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <span class="text-gray-500 w-20 flex-shrink-0">Delivery:</span>
+                <div>
+                  <span class="text-gray-900 font-semibold">Estimated between Wed, Nov 4 and Fri, Nov 6</span>
+                  <p class="text-gray-500">Seller ships within 1 business day after receiving cleared payment.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <span class="text-gray-500 w-20 flex-shrink-0">Returns:</span>
+                <div>
+                  <span class="text-gray-900 font-medium">30 days free returns.</span>
+                  <span class="text-gray-500">Seller pays for return shipping.</span>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <span class="text-gray-500 w-20 flex-shrink-0">Payments:</span>
+                <div class="flex items-center space-x-2 text-lg text-gray-600">
+                  <i class="ph-fill ph-credit-card text-blue-600" title="Visa / Master"></i>
+                  <i class="ph-fill ph-paypal-logo text-blue-800" title="PayPal"></i>
+                  <i class="ph-fill ph-apple-podcasts-logo text-black" title="Apple Pay"></i>
+                  <i class="ph-fill ph-google-logo text-red-500" title="Google Pay"></i>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Seller Info Sidebar (Right inside Col) -->
+          <div class="md:col-span-5 space-y-4">
+            <!-- Seller Box -->
+            <div class="border border-ebayBorder rounded-xl p-4 bg-white shadow-sm">
+              <div class="flex justify-between items-start">
+                <div>
+                  <div class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Seller information</div>
+                  <a href="#" class="font-bold text-gray-900 hover:text-ebayBlue text-sm block mt-1 hover:underline">
+                    RetroNextGen_Vault
+                  </a>
+                  <p class="text-xs text-gray-600 mt-0.5">
+                    14,280 feedback <span class="text-green-700 font-bold">(99.8% positive)</span>
+                  </p>
+                </div>
+                <span class="bg-blue-100 text-ebayBlue rounded-full p-2">
+                  <i class="ph-fill ph-shield-check text-xl"></i>
+                </span>
+              </div>
+
+              <div class="mt-4 pt-3 border-t border-gray-100 space-y-2 text-xs">
+                <a href="#" class="text-ebayBlue hover:underline flex items-center justify-between">
+                  <span>Save this seller</span>
+                  <i class="ph-bold ph-plus text-xs"></i>
+                </a>
+                <a href="#" class="text-ebayBlue hover:underline flex items-center justify-between">
+                  <span>Contact seller</span>
+                  <i class="ph-bold ph-envelope-simple text-xs"></i>
+                </a>
+                <a href="#" class="text-ebayBlue hover:underline flex items-center justify-between">
+                  <span>Visit store</span>
+                  <i class="ph-bold ph-storefront text-xs"></i>
+                </a>
+                <a href="#" class="text-ebayBlue hover:underline flex items-center justify-between">
+                  <span>See other items</span>
+                  <i class="ph-bold ph-arrow-square-out text-xs"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- eBay Money Back Guarantee Badge -->
+            <div class="border border-blue-200 bg-ebayLightBlue/40 rounded-xl p-4">
+              <div class="flex items-start space-x-3">
+                <i class="ph-fill ph-shield-check text-2xl text-ebayBlue flex-shrink-0 mt-0.5"></i>
+                <div>
+                  <h4 class="font-bold text-ebayBlue text-xs">eBay Money Back Guarantee</h4>
+                  <p class="text-xs text-gray-600 mt-1">
+                    Get the item you ordered or get your money back. Covers your purchase price and original shipping.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Key Game Metadata Highlights -->
+            <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 text-xs space-y-2">
+              <h5 class="font-bold text-gray-800 uppercase tracking-wider text-[11px]">Quick Specifications</h5>
+              <div class="flex justify-between py-1 border-b border-gray-200">
+                <span class="text-gray-500">Release Date</span>
+                <span class="font-semibold text-gray-800">June 25, 2021</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-gray-200">
+                <span class="text-gray-500">Platform</span>
+                <span class="font-semibold text-gray-800">Nintendo Switch</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-gray-200">
+                <span class="text-gray-500">Publisher</span>
+                <span class="font-semibold text-gray-800">Nintendo</span>
+              </div>
+              <div class="flex justify-between py-1">
+                <span class="text-gray-500">ESRB Rating</span>
+                <span class="font-semibold text-gray-800">E (Everyone)</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- TABS SECTION: Description, Item Specifics, Shipping & Policies -->
+    <div class="mt-12 border-t border-ebayBorder pt-6">
+      <!-- Tabs Header -->
+      <div class="flex border-b border-ebayBorder space-x-8 text-sm">
+        <button onclick="switchTab('description')" id="tab-btn-description" class="py-3 tab-active transition focus:outline-none">
+          Item Description & Specifics
+        </button>
+        <button onclick="switchTab('shipping')" id="tab-btn-shipping" class="py-3 text-gray-500 hover:text-black font-semibold transition focus:outline-none">
+          Shipping and payments
+        </button>
+        <button onclick="switchTab('seller')" id="tab-btn-seller" class="py-3 text-gray-500 hover:text-black font-semibold transition focus:outline-none">
+          About the Seller
+        </button>
+      </div>
+
+      <!-- Tab 1: Description & Item Specifics -->
+      <div id="tab-content-description" class="py-6 space-y-8">
+        
+        <!-- eBay Item Specifics Grid -->
+        <div>
+          <h3 class="font-bold text-base text-gray-900 mb-3">Item specifics</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 bg-gray-50 p-4 rounded-xl border border-gray-200 text-xs">
+            <div><span class="text-gray-500 block">Condition:</span> <span class="font-medium text-gray-900">Very Good (Pre-owned)</span></div>
+            <div><span class="text-gray-500 block">Release Date:</span> <span class="font-bold text-gray-900">June 25, 2021</span></div>
+            <div><span class="text-gray-500 block">Game Name:</span> <span class="font-medium text-gray-900">Mario Golf: Super Rush</span></div>
+            <div><span class="text-gray-500 block">Platform:</span> <span class="font-medium text-gray-900">Nintendo Switch</span></div>
+            <div><span class="text-gray-500 block">Publisher:</span> <span class="font-medium text-gray-900">Nintendo</span></div>
+            <div><span class="text-gray-500 block">Developer:</span> <span class="font-medium text-gray-900">Camelot Software Planning</span></div>
+            <div><span class="text-gray-500 block">Genre:</span> <span class="font-medium text-gray-900">Sports / Golf / Arcade</span></div>
+            <div><span class="text-gray-500 block">Rating:</span> <span class="font-medium text-gray-900">E - Everyone (Comic Mischief)</span></div>
+            <div><span class="text-gray-500 block">Region Code:</span> <span class="font-medium text-gray-900">Region Free (NTSC-U/C USA)</span></div>
+            <div><span class="text-gray-500 block">MPN:</span> <span class="font-medium text-gray-900">HAC-P-AWNCA</span></div>
+            <div><span class="text-gray-500 block">UPC:</span> <span class="font-medium text-gray-900">045496597794</span></div>
+            <div><span class="text-gray-500 block">Multiplayer:</span> <span class="font-medium text-gray-900">Up to 4 Players (Local & Online)</span></div>
+          </div>
+        </div>
+
+        <!-- Rich Editorial Description -->
+        <div class="border border-ebayBorder rounded-xl p-6 bg-white shadow-sm space-y-4 text-gray-800 leading-relaxed text-sm">
+          <div class="border-b pb-3 flex items-center justify-between">
+            <h3 class="text-lg font-bold text-gray-900">Seller's Description</h3>
+            <span class="text-xs text-gray-500">Stock ID: #CIB-MGS-8841</span>
+          </div>
+
+          <p>
+            Up for sale is a genuine, authentic North American physical copy of <em><strong>Mario Golf: Super Rush</strong></em> for the <strong>Nintendo Switch</strong>!
+          </p>
+
+          <h4 class="font-bold text-gray-900 pt-2">Package Contents:</h4>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>Original Nintendo Switch game cartridge (Clean pins, tested on OLED Switch model).</li>
+            <li>Original high-gloss outer box sleeve with factory cover art.</li>
+            <li>Inner artwork sheet (No water damage, tears, or creases).</li>
+          </ul>
+
+          <h4 class="font-bold text-gray-900 pt-2">About the Game:</h4>
+          <p>
+            Hit the green with familiar Mushroom Kingdom characters in <em>Mario Golf: Super Rush</em>! Released on <strong>June 25, 2021</strong>, this installment delivers fast-paced golfing action with innovative mechanics:
+          </p>
+          <ul class="list-disc pl-5 space-y-1">
+            <li><strong>Speed Golf:</strong> Tee off simultaneously with up to four players, sprint to your ball across vast lush courses, and sink the putt first!</li>
+            <li><strong>Battle Golf:</strong> Compete in neon-lit arena courses with obstacles and special hazards.</li>
+            <li><strong>Motion Controls or Button Controls:</strong> Swing like a real golf club using the Joy-Con motion sensors or stick to precise button controls.</li>
+            <li><strong>Golf Adventure RPG Mode:</strong> Take your custom Mii from rookie to pro while learning wind reading, terrain navigation, and power shots.</li>
+          </ul>
+
+          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-xs text-yellow-900 mt-4">
+            <strong>Condition Guarantee:</strong> All pre-owned games at RetroNextGen Vault are thoroughly inspected, contact-sanitized with 99% isopropyl alcohol, and tested in a clean, smoke-free facility. We pack using premium bubble mailers and rigid cardboard protectors to ensure pristine transit.
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Shipping & Payments -->
+      <div id="tab-content-shipping" class="hidden py-6 space-y-6">
+        <div class="border border-ebayBorder rounded-xl p-6 bg-white space-y-4">
+          <h3 class="font-bold text-base text-gray-900">Shipping and Handling</h3>
+          <div class="text-sm text-gray-700 space-y-2">
+            <p><strong>Item Location:</strong> Orlando, FL 32801, United States</p>
+            <p><strong>Domestic Shipping:</strong> US $4.25 via USPS Ground Advantage® (2–5 business days).</p>
+            <p><strong>Expedited Shipping:</strong> US $8.50 via USPS Priority Mail® (1–3 business days).</p>
+            <p><strong>International Shipping:</strong> Processed through the official eBay International Shipping Program with automated customs tracking.</p>
+            <p><strong>Handling Time:</strong> Same business day shipping if ordered before 2:00 PM EST.</p>
+          </div>
+          
+          <hr class="my-4">
+          
+          <h3 class="font-bold text-base text-gray-900">Return Policy</h3>
+          <p class="text-sm text-gray-700">
+            30-day money-back return privilege. If the item does not arrive as described, or doesn't read cleanly on your system, we provide a prepaid return label and full 100% refund.
+          </p>
+        </div>
+      </div>
+
+      <!-- Tab 3: Seller Info -->
+      <div id="tab-content-seller" class="hidden py-6 space-y-6">
+        <div class="border border-ebayBorder rounded-xl p-6 bg-white space-y-4">
+          <h3 class="font-bold text-base text-gray-900">About RetroNextGen_Vault</h3>
+          <p class="text-sm text-gray-700">
+            Top-rated eBay seller since 2014 specializing in authentic video games, retro cartridges, modern Nintendo Switch releases, and collector editions.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-3">
+            <div class="bg-gray-50 p-4 rounded-lg border text-center">
+              <span class="text-2xl font-bold text-gray-900">99.8%</span>
+              <p class="text-xs text-gray-500 mt-1">Positive Feedback</p>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg border text-center">
+              <span class="text-2xl font-bold text-gray-900">&lt; 1 hr</span>
+              <p class="text-xs text-gray-500 mt-1">Average Response Time</p>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg border text-center">
+              <span class="text-2xl font-bold text-gray-900">14,200+</span>
+              <p class="text-xs text-gray-500 mt-1">Orders Fulfilled</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Products / You May Also Like -->
+    <div class="mt-8 border-t border-ebayBorder pt-8">
+      <h3 class="font-bold text-lg text-gray-900 mb-4">Sponsored items related to this game</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        <!-- Related Item 1 -->
+        <div class="border border-gray-200 rounded-lg p-3 hover:shadow-md transition bg-white flex flex-col justify-between">
+          <div class="h-36 flex items-center justify-center overflow-hidden mb-2">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=250&q=80" alt="Mario Tennis Aces" class="max-h-full object-contain">
+          </div>
+          <div>
+            <h4 class="text-xs font-medium text-gray-800 line-clamp-2 hover:text-ebayBlue cursor-pointer">Mario Tennis Aces - Nintendo Switch (CIB)</h4>
+            <div class="mt-1 font-bold text-sm text-gray-900">$34.95</div>
+            <div class="text-[11px] text-gray-500">Free shipping</div>
+          </div>
+        </div>
+
+        <!-- Related Item 2 -->
+        <div class="border border-gray-200 rounded-lg p-3 hover:shadow-md transition bg-white flex flex-col justify-between">
+          <div class="h-36 flex items-center justify-center overflow-hidden mb-2">
+            <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=250&q=80" alt="Super Mario 3D World" class="max-h-full object-contain">
+          </div>
+          <div>
+            <h4 class="text-xs font-medium text-gray-800 line-clamp-2 hover:text-ebayBlue cursor-pointer">Super Mario 3D World + Bowser's Fury</h4>
+            <div class="mt-1 font-bold text-sm text-gray-900">$42.50</div>
+            <div class="text-[11px] text-gray-500">+$3.99 shipping</div>
+          </div>
+        </div>
+
+        <!-- Related Item 3 -->
+        <div class="border border-gray-200 rounded-lg p-3 hover:shadow-md transition bg-white flex flex-col justify-between">
+          <div class="h-36 flex items-center justify-center overflow-hidden mb-2">
+            <img src="https://images.unsplash.com/photo-1612287233215-645b23d5eead?auto=format&fit=crop&w=250&q=80" alt="Mario Strikers Battle League" class="max-h-full object-contain">
+          </div>
+          <div>
+            <h4 class="text-xs font-medium text-gray-800 line-clamp-2 hover:text-ebayBlue cursor-pointer">Mario Strikers: Battle League Switch</h4>
+            <div class="mt-1 font-bold text-sm text-gray-900">$37.99</div>
+            <div class="text-[11px] text-gray-500">Free shipping</div>
+          </div>
+        </div>
+
+        <!-- Related Item 4 -->
+        <div class="border border-gray-200 rounded-lg p-3 hover:shadow-md transition bg-white flex flex-col justify-between">
+          <div class="h-36 flex items-center justify-center overflow-hidden mb-2">
+            <img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?auto=format&fit=crop&w=250&q=80" alt="Joy-Con Golf Clubs" class="max-h-full object-contain">
+          </div>
+          <div>
+            <h4 class="text-xs font-medium text-gray-800 line-clamp-2 hover:text-ebayBlue cursor-pointer">2x Joy-Con Golf Club Grips for Mario Golf</h4>
+            <div class="mt-1 font-bold text-sm text-gray-900">$14.99</div>
+            <div class="text-[11px] text-gray-500">Free shipping</div>
+          </div>
+        </div>
+
+        <!-- Related Item 5 -->
+        <div class="border border-gray-200 rounded-lg p-3 hover:shadow-md transition bg-white flex flex-col justify-between">
+          <div class="h-36 flex items-center justify-center overflow-hidden mb-2">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=250&q=80" alt="Nintendo Switch Sports" class="max-h-full object-contain">
+          </div>
+          <div>
+            <h4 class="text-xs font-medium text-gray-800 line-clamp-2 hover:text-ebayBlue cursor-pointer">Nintendo Switch Sports w/ Leg Strap</h4>
+            <div class="mt-1 font-bold text-sm text-gray-900">$38.00</div>
+            <div class="text-[11px] text-gray-500">+$4.50 shipping</div>
+          </div>
+        </div>
+
+        <!-- Related Item 6 -->
+        <div class="border border-gray-200 rounded-lg p-3 hover:shadow-md transition bg-white flex flex-col justify-between">
+          <div class="h-36 flex items-center justify-center overflow-hidden mb-2">
+            <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=250&q=80" alt="Mario Kart 8 Deluxe" class="max-h-full object-contain">
+          </div>
+          <div>
+            <h4 class="text-xs font-medium text-gray-800 line-clamp-2 hover:text-ebayBlue cursor-pointer">Mario Kart 8 Deluxe - Nintendo Switch</h4>
+            <div class="mt-1 font-bold text-sm text-gray-900">$44.99</div>
+            <div class="text-[11px] text-gray-500">Free shipping</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- eBay Cart Slide-out / Modal Simulator -->
+  <div id="cart-modal" class="fixed inset-0 z-50 bg-black/60 hidden backdrop-blur-xs flex justify-end">
+    <div class="w-full max-w-md bg-white h-full shadow-2xl flex flex-col justify-between p-6 overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between border-b pb-4">
+          <div class="flex items-center space-x-2">
+            <i class="ph-bold ph-shopping-cart text-xl text-ebayBlue"></i>
+            <h2 class="text-lg font-bold text-gray-900">Shopping Cart (<span id="modal-cart-qty">0</span>)</h2>
+          </div>
+          <button onclick="closeCartModal()" class="text-gray-400 hover:text-black text-2xl font-bold">&times;</button>
+        </div>
+
+        <div id="cart-empty-view" class="py-12 text-center">
+          <i class="ph-light ph-shopping-bag text-5xl text-gray-300"></i>
+          <p class="text-gray-500 mt-3 text-sm">Your cart is currently empty.</p>
+        </div>
+
+        <div id="cart-items-view" class="hidden py-4 space-y-4">
+          <div class="flex gap-4 border-b pb-4">
+            <img src="https://austinzironic.github.io/www.ebay.com/images/mario-golf-super-rush-nsw-usa/front.png" alt="Cart item" class="w-16 h-20 object-contain rounded border" onerror="this.src='https://placehold.co/100x100/107c10/ffffff?text=Cart'">
+            <div class="flex-1 text-xs">
+              <h5 class="font-bold text-gray-900">Mario Golf: Super Rush - Nintendo Switch (CIB)</h5>
+              <div class="text-gray-500 mt-1">Condition: Very Good</div>
+              <div class="text-gray-500">Seller: RetroNextGen_Vault</div>
+              <div class="text-sm font-bold text-gray-900 mt-2">$39.99</div>
+            </div>
+            <button onclick="removeItemFromCart()" class="text-gray-400 hover:text-red-600 text-sm">
+              <i class="ph-bold ph-trash"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="cart-footer" class="border-t pt-4 hidden">
+        <div class="flex justify-between text-sm mb-1 text-gray-600">
+          <span>Subtotal</span>
+          <span class="font-semibold text-gray-900">$39.99</span>
+        </div>
+        <div class="flex justify-between text-sm mb-4 text-gray-600">
+          <span>Estimated shipping</span>
+          <span class="font-semibold text-gray-900">$4.25</span>
+        </div>
+        <div class="flex justify-between text-base font-bold text-gray-900 mb-4 pt-2 border-t">
+          <span>Total</span>
+          <span class="text-ebayBlue">$44.24</span>
+        </div>
+        <button onclick="checkoutMock()" class="w-full bg-ebayBlue hover:bg-ebayBlueHover text-white font-bold py-3 rounded-full text-sm">
+          Go to checkout
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Standard eBay-style Footer -->
+  <footer class="mt-16 bg-gray-100 border-t border-ebayBorder text-xs text-gray-600 py-10">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 pb-8 border-b border-gray-200">
+        <div>
+          <h5 class="font-bold text-gray-900 mb-3">Buy</h5>
+          <ul class="space-y-1.5">
+            <li><a href="#" class="hover:underline">Registration</a></li>
+            <li><a href="#" class="hover:underline">eBay Money Back Guarantee</a></li>
+            <li><a href="#" class="hover:underline">Bidding & buying help</a></li>
+            <li><a href="#" class="hover:underline">Stores</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold text-gray-900 mb-3">Sell</h5>
+          <ul class="space-y-1.5">
+            <li><a href="#" class="hover:underline">Start selling</a></li>
+            <li><a href="#" class="hover:underline">Learn to sell</a></li>
+            <li><a href="#" class="hover:underline">Affiliates</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold text-gray-900 mb-3">Stay connected</h5>
+          <ul class="space-y-1.5">
+            <li><a href="#" class="hover:underline">eBay's Blogs</a></li>
+            <li><a href="#" class="hover:underline">Facebook</a></li>
+            <li><a href="#" class="hover:underline">Twitter / X</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold text-gray-900 mb-3">About eBay</h5>
+          <ul class="space-y-1.5">
+            <li><a href="#" class="hover:underline">Company info</a></li>
+            <li><a href="#" class="hover:underline">News</a></li>
+            <li><a href="#" class="hover:underline">Investors</a></li>
+            <li><a href="#" class="hover:underline">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold text-gray-900 mb-3">Help & Contact</h5>
+          <ul class="space-y-1.5">
+            <li><a href="#" class="hover:underline">Seller Information Center</a></li>
+            <li><a href="#" class="hover:underline">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col md:flex-row items-center justify-between text-gray-500 gap-4">
+        <p>Copyright © 1995-2026 eBay Inc. All Rights Reserved. Accessibility, User Agreement, Privacy, Payments Terms of Use, Cookies, and AdChoice.</p>
+        <div class="flex items-center space-x-2">
+          <span class="inline-block w-2 h-2 rounded-full bg-green-500"></span>
+          <span>United States (en-US)</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript logic -->
+  <script>
+    // State management
+    let cartCount = 0;
+    let isWatching = false;
+
+    // Gallery images pointing to the specified URLs
+    const photos = [
+      "https://austinzironic.github.io/www.ebay.com/images/mario-golf-super-rush-nsw-usa/front.png",
+      "https://austinzironic.github.io/www.ebay.com/images/mario-golf-super-rush-nsw-usa/back.png",
+      "https://austinzironic.github.io/www.ebay.com/images/mario-golf-super-rush-nsw-usa/front.png",
+      "https://austinzironic.github.io/www.ebay.com/images/mario-golf-super-rush-nsw-usa/back.png"
+    ];
+
+    function changePhoto(index, element) {
+      const mainImg = document.getElementById('main-product-img');
+      mainImg.src = photos[index];
+
+      // Highlight thumbnail
+      document.querySelectorAll('.thumbnail-btn').forEach(btn => {
+        btn.classList.remove('border-ebayBlue', 'border-2');
+        btn.classList.add('border-gray-200', 'border');
+      });
+      element.classList.remove('border-gray-200', 'border');
+      element.classList.add('border-ebayBlue', 'border-2');
+    }
+
+    // Tab Switching
+    function switchTab(tabId) {
+      const tabs = ['description', 'shipping', 'seller'];
+      tabs.forEach(tab => {
+        const content = document.getElementById(`tab-content-${tab}`);
+        const btn = document.getElementById(`tab-btn-${tab}`);
+        if (tab === tabId) {
+          content.classList.remove('hidden');
+          btn.classList.add('tab-active');
+          btn.classList.remove('text-gray-500');
+        } else {
+          content.classList.add('hidden');
+          btn.classList.remove('tab-active');
+          btn.classList.add('text-gray-500');
+        }
+      });
+    }
+
+    // Watchlist interaction
+    function toggleWatchlist() {
+      isWatching = !isWatching;
+      const favIcon = document.getElementById('fav-icon');
+      const btnText = document.getElementById('watchlist-btn-text');
+
+      if (isWatching) {
+        favIcon.className = "ph-fill ph-heart text-ebayRed text-lg";
+        btnText.innerText = "Watching (Remove)";
+        showToast("Added to your Watchlist!", "ph-fill ph-heart text-ebayRed");
+      } else {
+        favIcon.className = "ph-bold ph-heart text-lg";
+        btnText.innerText = "Add to Watchlist";
+        showToast("Removed from your Watchlist", "ph-bold ph-info text-blue-400");
+      }
+    }
+
+    // Cart actions
+    function handleAddToCart() {
+      cartCount = 1;
+      updateCartDisplay();
+      showToast("Added to cart! (Mario Golf: Super Rush)", "ph-bold ph-shopping-cart-simple text-green-400");
+    }
+
+    function handleBuyNow() {
+      cartCount = 1;
+      updateCartDisplay();
+      openCartModal();
+    }
+
+    function removeItemFromCart() {
+      cartCount = 0;
+      updateCartDisplay();
+      showToast("Item removed from your cart", "ph-bold ph-trash text-yellow-400");
+    }
+
+    function updateCartDisplay() {
+      document.getElementById('cart-counter').innerText = cartCount;
+      document.getElementById('modal-cart-qty').innerText = cartCount;
+      
+      const emptyView = document.getElementById('cart-empty-view');
+      const itemsView = document.getElementById('cart-items-view');
+      const footerView = document.getElementById('cart-footer');
+
+      if (cartCount > 0) {
+        emptyView.classList.add('hidden');
+        itemsView.classList.remove('hidden');
+        footerView.classList.remove('hidden');
+      } else {
+        emptyView.classList.remove('hidden');
+        itemsView.classList.add('hidden');
+        footerView.classList.add('hidden');
+      }
+    }
+
+    function openCartModal() {
+      document.getElementById('cart-modal').classList.remove('hidden');
+    }
+
+    function closeCartModal() {
+      document.getElementById('cart-modal').classList.add('hidden');
+    }
+
+    function checkoutMock() {
+      showToast("Proceeding to secure checkout...", "ph-bold ph-lock-key text-blue-400");
+      setTimeout(() => {
+        closeCartModal();
+      }, 1500);
+    }
+
+    // Toast notification helper
+    function showToast(message, iconClass) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-message');
+      const toastIcon = document.getElementById('toast-icon');
+
+      toastMsg.innerText = message;
+      toastIcon.className = `${iconClass} text-xl`;
+
+      toast.classList.remove('translate-x-full');
+      setTimeout(() => {
+        toast.classList.add('translate-x-full');
+      }, 3000);
+    }
+
+    // Close modal when clicking outside
+    document.getElementById('cart-modal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeCartModal();
+      }
+    });
+  </script>
+</body>
+</html>
