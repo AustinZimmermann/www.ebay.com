@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mario Golf: Super Rush - Nintendo Switch (Japanese Version / Region Free, Complete in Box) | eBay</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Phosphor Icons for eBay UI icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ebayBlue: '#0053a0',
+            ebayBlueHover: '#003e7a',
+            ebayRed: '#e53238',
+            ebayYellow: '#f5af02',
+            ebayGreen: '#86b817',
+            ebayBg: '#f7f7f7',
+            ebayDarkText: '#191919',
+            ebayMuted: '#707070',
+            ebayBorder: '#e5e5e5',
+            ebayLightBlue: '#e8f0fe'
+          },
+          fontFamily: {
+            sans: ['"Market Sans"', 'Helvetica', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Custom styling for precise eBay feel */
+    body {
+      color: #191919;
+      background-color: #ffffff;
+      -webkit-font-smoothing: antialiased;
+    }
+    .ebay-logo-e { color: #e53238; }
+    .ebay-logo-b { color: #0064d2; }
+    .ebay-logo-a { color: #f5af02; }
+    .ebay-logo-y { color: #86b817; }
+    .btn-buy-now {
+      background-color: #3470e4;
+      transition: background-color 0.15s ease-in-out;
+    }
+    .btn-buy-now:hover {
+      background-color: #1b53c7;
+    }
+    .btn-add-cart {
+      background-color: #dbeafe;
+      color: #1e40af;
+      border: 1px solid #bfdbfe;
+    }
+    .btn-add-cart:hover {
+      background-color: #bfdbfe;
+    }
+    .tab-active {
+      border-bottom: 3px solid #191919;
+      font-weight: 700;
+      color: #191919;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      height: 4px;
+      width: 4px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 4px;
+    }
+  </style>
+
+  <!-- JSON-LD Structured Data for eBay Product Listing -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Mario Golf: Super Rush (マリオゴルフ スーパーラッシュ) - Nintendo Switch (Japan Import)",
+    "image": [
+      "https://austinzimmermann.github.io/www.ebay.com/images/mario-golf-super-rush-nsw-jpn/front.png",
+      "https://austinzimmermann.github.io/www.ebay.com/images/mario-golf-super-rush-nsw-jpn/back.png"
+    ],
+    "description": "Mario Golf: Super Rush for Nintendo Switch - Japanese Import (CERO A / Region Free). Authentic physical release complete in original box (CIB). Includes Japanese & English multilingual text options. Released in Japan on June 25, 2021.",
+    "sku": "EBAY-JP-MGSR-2021",
+    "gtin13": "4902370547955",
+    "releaseDate": "2021-06-25",
+    "brand": {
+      "@type": "Brand",
+      "name": "Nintendo"
+    },
+    "category": "Video Games & Consoles > Video Games",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ebay.com/itm/404819201948",
+      "priceCurrency": "USD",
+      "price": "36.50",
+      "priceValidUntil": "2027-12-31",
+      "itemCondition": "https://schema.org/UsedCondition",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": "Tokyo_Retro_Vault_Japan",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "99.9",
+          "reviewCount": "21840",
+          "bestRating": "100"
+        }
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "7.00",
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 1,
+            "maxValue": 1,
+            "unitCode": "d"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 3,
+            "maxValue": 6,
+            "unitCode": "d"
+          }
+        }
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "246",
+      "bestRating": "5"
+    }
+  }
+  </script>
+</head>
+<body class="text-sm">
+
+  <!-- Toast Notification Box for Actions -->
+  <div id="toast" class="fixed top-5 right-5 z-50 transform translate-x-full transition-all duration-300 bg-gray-900 text-white px-5 py-3 rounded-lg shadow-xl flex items-center space-x-3 pointer-events-none">
+    <i id="toast-icon" class="ph-bold ph-check-circle text-green-400 text-xl"></i>
+    <span id="toast-message" class="text-sm font-medium">Added to cart!</span>
+  </div>
+
+  <!-- Top Utilities Header -->
+  <header class="border-b border-ebayBorder text-xs text-ebayDarkText">
+    <div class="max-w-7xl mx-auto px-4 py-1.5 flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <span>Hi <strong>Gamer_Alex</strong>! (<a href="#" class="text-ebayBlue hover:underline">Sign out</a>)</span>
+        <span class="hidden md:inline text-gray-300">|</span>
+        <a href="#" class="hidden md:inline hover:underline text-gray-600">Daily Deals</a>
+        <a href="#" class="hidden md:inline hover:underline text-gray-600">Help & Contact</a>
+      </div>
+      <div class="flex items-center space-x-5 text-gray-600">
+        <a href="#" class="hover:underline flex items-center gap-1">
+          <i class="ph-bold ph-truck text-sm"></i>
+          <span>Ship to <strong>90210</strong></span>
+        </a>
+        <a href="#" class="hover:underline hidden sm:inline">Sell</a>
+        <div class="relative group cursor-pointer">
+          <span class="flex items-center hover:underline">Watchlist <i class="ph-bold ph-caret-down text-[10px] ml-0.5"></i></span>
+        </div>
+        <div class="relative group cursor-pointer">
+          <span class="flex items-center hover:underline">My eBay <i class="ph-bold ph-caret-down text-[10px] ml-0.5"></i></span>
+        </div>
+        <a href="#" class="relative hover:text-black">
+          <i class="ph-bold ph-bell text-base"></i>
+        </a>
+        <a href="javascript:void(0)" onclick="openCartModal()" class="relative hover:text-black flex items-center">
+          <i class="ph-bold ph-shopping-cart text-lg"></i>
+          <span id="cart-counter" class="absolute -top-1.5 -right-2 bg-ebayBlue text-white rounded-full text-[10px] font-bold w-4 h-4 flex items-center justify-center">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search & Brand Bar -->
+  <div class="border-b border-ebayBorder py-3 bg-white">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-4">
+      <!-- eBay Logo -->
+      <a href="#" class="flex items-center text-3xl font-black tracking-tighter self-start md:self-auto select-none">
+        <span class="ebay-logo-e">e</span><span class="ebay-logo-b">b</span><span class="ebay-logo-a">a</span><span class="ebay-logo-y">y</span>
+      </a>
+
+      <!-- Category dropdown + Search bar -->
+      <div class="flex-1 w-full flex items-center border-2 border-ebayDarkText rounded-full overflow-hidden hover:border-black transition">
+        <div class="relative hidden lg:flex items-center pl-4 pr-2 text-xs font-semibold text-gray-700 bg-gray-50 border-r border-gray-200 h-10 cursor-pointer">
+          <span>Shop by category</span>
+          <i class="ph-bold ph-caret-down text-[10px] ml-1 text-gray-500"></i>
+        </div>
+        <div class="flex-1 flex items-center px-3">
+          <i class="ph-bold ph-magnifying-glass text-gray-400 text-lg mr-2"></i>
+          <input 
+            type="text" 
+            value="Mario Golf: Super Rush Nintendo Switch Japan Import" 
+            class="w-full text-sm outline-none bg-transparent placeholder-gray-500"
+            placeholder="Search for anything"
+          />
+        </div>
+        <div class="hidden sm:flex items-center border-l border-gray-300 px-3 bg-gray-50 h-10 text-xs text-gray-700">
+          <span>Video Games</span>
+          <i class="ph-bold ph-caret-down text-[10px] ml-1 text-gray-500"></i>
+        </div>
+        <button class="bg-ebayBlue hover:bg-ebayBlueHover text-white px-8 h-10 font-semibold text-sm transition">
+          Search
+        </button>
+      </div>
+      
+      <div class="hidden lg:block text-xs text-ebayBlue hover:underline cursor-pointer">
+        Advanced
+      </div>
+    </div>
+  </div>
+
+  <!-- Breadcrumbs -->
+  <nav class="max-w-7xl mx-auto px-4 py-2 text-xs text-gray-500 flex items-center space-x-1.5 flex-wrap">
+    <a href="#" class="hover:underline">Home</a>
+    <i class="ph-bold ph-caret-right text-[9px] text-gray-400"></i>
+    <a href="#" class="hover:underline">Video Games & Consoles</a>
+    <i class="ph-bold ph-caret-right text-[9px] text-gray-400"></i>
+    <a href="#" class="hover:underline">Video Games</a>
+    <i class="ph-bold ph-caret-right text-[9px] text-gray-400"></i>
+    <span class="text-gray-700 font-medium truncate max-w-xs md:max-w-md">Mario Golf: Super Rush (Japan Import - Switch)</span>
+  </nav>
+
+  <!-- Main Listing Container -->
+  <main class="max-w-7xl mx-auto px-4 py-4">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      
+      <!-- LEFT COLUMN: Gallery & Interactive Photos (5 cols) -->
+      <div class="lg:col-span-5 flex flex-col space-y-4">
+        <!-- Main Stage Image Container with Magnifier effect simulated -->
+        <div class="relative border border-ebayBorder rounded-xl p-4 bg-gray-50 flex items-center justify-center min-h-[380px] max-h-[500px] overflow-hidden group">
+          <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded text-[11px] font-semibold text-gray-700 shadow-sm border border-gray-200 z-10 flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-red-600 inline-block"></span>
+            Direct Japan Import (NTSC-J)
+          </div>
+          
+          <button id="favorite-btn" onclick="toggleWatchlist()" class="absolute top-3 right-3 p-2 bg-white rounded-full shadow-md text-gray-600 hover:text-ebayRed transition z-10" title="Add to watchlist">
+            <i id="fav-icon" class="ph-bold ph-heart text-lg"></i>
+          </button>
+
+          <!-- Main Dynamic Image -->
+          <img 
+            id="main-product-img" 
+            src="https://austinzimmermann.github.io/www.ebay.com/images/mario-golf-super-rush-nsw-jpn/front.png" 
+            alt="Mario Golf: Super Rush Japan Version Front Cover" 
+            class="max-h-[420px] w-auto object-contain transition-transform duration-300 group-hover:scale-105 select-none"
+            onerror="this.src='https://placehold.co/600x600/107c10/ffffff?text=Mario+Golf+Super+Rush+Japan'"
+          />
+          
+          <!-- Zoom indicator -->
+          <div class="absolute bottom-3 right-3 text-xs bg-white/90 px-2 py-1 rounded border text-gray-500 flex items-center gap-1 shadow-sm">
+            <i class="ph-bold ph-magnifying-glass-plus"></i> Mouse over to zoom
+          </div>
+        </div>
+
+        <!-- Thumbnails Strip -->
+        <div class="flex items-center space-x-3 overflow-x-auto pb-2 custom-scroll">
+          <button onclick="changePhoto(0, this)" class="thumbnail-btn border-2 border-ebayBlue rounded-lg p-1 bg-white flex-shrink-0 w-16 h-16 flex items-center justify-center transition">
+            <img src="https://austinzimmermann.github.io/www.ebay.com/images/mario-golf-super-rush-nsw-jpn/front.png" alt="Box Front" class="max-h-full object-contain" onerror="this.src='https://placehold.co/100x100/107c10/ffffff?text=Front+JPN'">
+          </button>
+          <button onclick="changePhoto(1, this)" class="thumbnail-btn border border-gray-200 hover:border-gray-400 rounded-lg p-1 bg-white flex-shrink-0 w-16 h-16 flex items-center justify-center transition">
+            <img src="https://austinzimmermann.github.io/www.ebay.com/images/mario-golf-super-rush-nsw-jpn/back.png" alt="Box Back" class="max-h-full object-contain" onerror="this.src='https://placehold.co/100x100/107c10/ffffff?text=Back+JPN'">
+          </button>
+          <button onclick="changePhoto(2, this)" class="thumbnail-btn border border-gray-200 hover:border-gray-400 rounded-lg p-1 bg-white flex-shrink-0 w-16 h-16 flex items-center justify-center transition">
+            <img src="https://austinzimmermann.github.io/www.ebay.com/images/mario-golf-super-rush-nsw-jpn/front.png" alt="Front Spine View" class="max-h-full object-contain opacity-90 hover:opacity-100" onerror="this.src='https://placehold.co/100x100/107c10/ffffff?text=Spine+JPN'">
+          </button>
+          <button onclick="changePhoto(3, this)" class="thumbnail-btn border border-gray-200 hover:border-gray-400 rounded-lg p-1 bg-white flex-shrink-0 w-16 h-16 flex items-center justify-center transition">
+            <img src="https://austinzimmermann.github.io/www.ebay.com/images/mario-golf-super-rush-nsw-jpn/back.png" alt="Back Text View" class="max-h-full object-contain opacity-90 hover:opacity-100" onerror="this.src='https://placehold.co/100x100/107c10/ffffff?text=Cartridge'">
+          </button>
+        </div>
+
+        <div class="text-xs text-gray-500 flex justify-between pt-1">
+          <span>Actual photos from Tokyo, Japan warehouse</span>
+          <span class="text-ebayBlue hover:underline cursor-pointer">Report item</span>
+        </div>
+      </div>
+
+      <!-- CENTER / RIGHT COLUMN: Title, Pricing & Purchasing (7 cols) -->
+      <div class="lg:col-span-7 flex flex-col space-y-4">
+        
+        <!-- Header Info -->
+        <div>
+          <h1 class="text-xl md:text-2xl font-bold tracking-tight text-gray-900 leading-snug">
+            Mario Golf: Super Rush - Nintendo Switch (Japanese Import, CIB Complete in Box, Region-Free)
+          </h1>
+          <div class="mt-2 flex flex-wrap items-center gap-3 text-xs">
+            <div class="flex items-center text-amber-500">
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <i class="ph-fill ph-star"></i>
+              <span class="ml-1 text-gray-800 font-semibold">4.9</span>
+              <a href="#reviews" class="ml-1 text-ebayBlue hover:underline">(246 reviews)</a>
+            </div>
+            <span class="text-gray-300">|</span>
+            <span class="text-gray-600 font-medium">Item number: <span class="text-gray-800">404819201948</span></span>
+            <span class="text-gray-300">|</span>
+            <span class="text-ebayRed font-semibold flex items-center gap-1">
+              <i class="ph-fill ph-fire text-ebayRed"></i> 19 people watching this right now
+            </span>
+          </div>
+        </div>
+
+        <hr class="border-ebayBorder">
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+          
+          <!-- Buying Block (Left inside Col) -->
+          <div class="md:col-span-7 space-y-4">
+            
+            <!-- Condition -->
+            <div class="flex items-baseline space-x-3">
+              <span class="text-gray-500 text-xs w-20">Condition:</span>
+              <div>
+                <span class="font-bold text-gray-900">Very Good (Like New Import)</span>
+                <p class="text-xs text-gray-500 mt-0.5">Authentic Japanese cartridge & original case. 100% Region-Free on all Nintendo Switch consoles worldwide. Supports English & Japanese language!</p>
+              </div>
+            </div>
+
+            <!-- Price Breakdown -->
+            <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
+              <div class="flex items-baseline justify-between">
+                <span class="text-xs text-gray-500">Buy It Now Price:</span>
+                <span class="text-xs font-semibold text-green-700 bg-green-100 px-2 py-0.5 rounded">Air Expedited from Tokyo</span>
+              </div>
+
+              <div class="mt-2 flex items-baseline gap-2">
+                <span class="text-3xl font-bold text-gray-900">US $36.50</span>
+                <span class="text-xs text-gray-500 line-through">$54.99</span>
+                <span class="text-xs font-semibold text-ebayRed">Save $18.49</span>
+              </div>
+              <p class="text-xs text-gray-500 mt-1">Or 4 interest-free payments of $9.12 with <span class="font-semibold text-blue-900">Klarna</span> or <span class="font-semibold text-blue-600">PayPal</span></p>
+
+              <!-- Action CTAs -->
+              <div class="mt-4 flex flex-col space-y-2">
+                <button onclick="handleBuyNow()" class="w-full btn-buy-now text-white font-semibold py-3 px-4 rounded-full text-center text-sm shadow hover:shadow-md transition">
+                  Buy It Now
+                </button>
+                <button onclick="handleAddToCart()" class="w-full btn-add-cart font-semibold py-2.5 px-4 rounded-full text-center text-sm transition">
+                  Add to cart
+                </button>
+                <button id="watchlist-button" onclick="toggleWatchlist()" class="w-full bg-white border border-gray-300 hover:border-gray-500 text-gray-700 font-semibold py-2.5 px-4 rounded-full text-center text-sm flex items-center justify-center gap-2 transition">
+                  <i class="ph-bold ph-heart text-ebayRed"></i>
+                  <span id="watchlist-btn-text">Add to Watchlist</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Shipping, Delivery & Returns info -->
+            <div class="text-xs space-y-3 pt-2 text-gray-700">
+              <div class="flex items-start">
+                <span class="text-gray-500 w-20 flex-shrink-0">Shipping:</span>
+                <div>
+                  <span class="font-semibold text-gray-900">US $7.00</span> Japan Post / DHL Express Airmail.
+                  <p class="text-gray-500">Item location: <strong>Tokyo, Japan</strong></p>
+                  <p class="text-gray-500">Ships to: Worldwide via eBay International Shipping with tracking included.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <span class="text-gray-500 w-20 flex-shrink-0">Delivery:</span>
+                <div>
+                  <span class="text-gray-900 font-semibold">Estimated between Nov 5 and Nov 9</span>
+                  <p class="text-gray-500">Ships within 24 hours of payment. Carefully packed in protective bubble wrap & rigid box.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <span class="text-gray-500 w-20 flex-shrink-0">Returns:</span>
+                <div>
+                  <span class="text-gray-900 font-medium">30 days returns accepted.</span>
+                  <span class="text-gray-500">Buyer pays return shipping to Japan depot.</span>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <span class="text-gray-500 w-20 flex-shrink-0">Payments:</span>
+                <div class="flex items-center space-x-2 text-lg text-gray-600">
+                  <i class="ph-fill ph-credit-card text-blue-600" title="Visa / Master"></i>
+                  <i class="ph-fill ph-paypal-logo text-blue-800" title="PayPal"></i>
+                  <i class="ph-fill ph-apple-podcasts-logo text-black" title="Apple Pay"></i>
+                  <i class="ph-fill ph-google-logo text-red-500" title="Google Pay"></i>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Seller Info Sidebar (Right inside Col) -->
+          <div class="md:col-span-5 space-y-4">
+            <!-- Seller Box -->
+            <div class="border border-ebayBorder rounded-xl p-4 bg-white shadow-sm">
+              <div class="flex justify-between items-start">
+                <div>
+                  <div class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Seller information</div>
+                  <a href="#" class="font-bold text-gray-900 hover:text-ebayBlue text-sm block mt-1 hover:underline">
+                    Tokyo_Retro_Vault_Japan
+                  </a>
+                  <p class="text-xs text-gray-600 mt-0.5">
+                    21,840 feedback <span class="text-green-700 font-bold">(99.9% positive)</span>
+                  </p>
+                </div>
+                <span class="bg-red-50 text-red-600 rounded-full p-2 border border-red-200">
+                  <i class="ph-fill ph-seal-check text-xl"></i>
+                </span>
+              </div>
+
+              <div class="mt-4 pt-3 border-t border-gray-100 space-y-2 text-xs">
+                <div class="flex items-center gap-1.5 text-gray-600 pb-1">
+                  <i class="ph-bold ph-map-pin text-red-500"></i>
+                  <span>Location: Akihabara, Chiyoda-ku, Tokyo, Japan</span>
+                </div>
+                <a href="#" class="text-ebayBlue hover:underline flex items-center justify-between">
+                  <span>Save this seller</span>
+                  <i class="ph-bold ph-plus text-xs"></i>
+                </a>
+                <a href="#" class="text-ebayBlue hover:underline flex items-center justify-between">
+                  <span>Contact seller</span>
+                  <i class="ph-bold ph-envelope-simple text-xs"></i>
+                </a>
+                <a href="#" class="text-ebayBlue hover:underline flex items-center justify-between">
+                  <span>Visit Japanese Storefront</span>
+                  <i class="ph-bold ph-storefront text-xs"></i>
+                </a>
+                <a href="#" class="text-ebayBlue hover:underline flex items-center justify-between">
+                  <span>See other Japan imports</span>
+                  <i class="ph-bold ph-arrow-square-out text-xs"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- eBay Money Back Guarantee Badge -->
+            <div class="border border-blue-200 bg-ebayLightBlue/40 rounded-xl p-4">
+              <div class="flex items-start space-x-3">
+                <i class="ph-fill ph-shield-check text-2xl text-ebayBlue flex-shrink-0 mt-0.5"></i>
+                <div>
+                  <h4 class="font-bold text-ebayBlue text-xs">eBay Money Back Guarantee</h4>
+                  <p class="text-xs text-gray-600 mt-1">
+                    Get the item you ordered or get your money back. 100% authenticity guaranteed from verified Japanese sellers.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Key Game Metadata Highlights -->
+            <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 text-xs space-y-2">
+              <h5 class="font-bold text-gray-800 uppercase tracking-wider text-[11px]">Japanese Release Specs</h5>
+              <div class="flex justify-between py-1 border-b border-gray-200">
+                <span class="text-gray-500">Release Date</span>
+                <span class="font-semibold text-gray-800">June 25, 2021 (2021-06-25)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-gray-200">
+                <span class="text-gray-500">Japanese Title</span>
+                <span class="font-semibold text-gray-800">マリオゴルフ スーパーラッシュ</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-gray-200">
+                <span class="text-gray-500">Region Lock</span>
+                <span class="font-semibold text-emerald-700">None (Region-Free)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-gray-200">
+                <span class="text-gray-500">Rating</span>
+                <span class="font-semibold text-gray-800">CERO A (All Ages)</span>
+              </div>
+              <div class="flex justify-between py-1">
+                <span class="text-gray-500">Language</span>
+                <span class="font-semibold text-gray-800">English, Japanese, French, etc.</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- TABS SECTION: Description, Item Specifics, Shipping & Policies -->
+    <div class="mt-12 border-t border-ebayBorder pt-6">
+      <!-- Tabs Header -->
+      <div class="flex border-b border-ebayBorder space-x-8 text-sm">
+        <button onclick="switchTab('description')" id="tab-btn-description" class="py-3 tab-active transition focus:outline-none">
+          Item Description & Specifics
+        </button>
+        <button onclick="switchTab('shipping')" id="tab-btn-shipping" class="py-3 text-gray-500 hover:text-black font-semibold transition focus:outline-none">
+          Shipping and payments (Japan to Global)
+        </button>
+        <button onclick="switchTab('seller')" id="tab-btn-seller" class="py-3 text-gray-500 hover:text-black font-semibold transition focus:outline-none">
+          About the Japan Seller
+        </button>
+      </div>
+
+      <!-- Tab 1: Description & Item Specifics -->
+      <div id="tab-content-description" class="py-6 space-y-8">
+        
+        <!-- eBay Item Specifics Grid -->
+        <div>
+          <h3 class="font-bold text-base text-gray-900 mb-3">Item specifics</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 bg-gray-50 p-4 rounded-xl border border-gray-200 text-xs">
+            <div><span class="text-gray-500 block">Condition:</span> <span class="font-medium text-gray-900">Very Good (Pre-owned, tested)</span></div>
+            <div><span class="text-gray-500 block">Release Date:</span> <span class="font-bold text-gray-900">June 25, 2021 (2021-06-25)</span></div>
+            <div><span class="text-gray-500 block">Game Name:</span> <span class="font-medium text-gray-900">Mario Golf: Super Rush (マリオゴルフ スーパーラッシュ)</span></div>
+            <div><span class="text-gray-500 block">Platform:</span> <span class="font-medium text-gray-900">Nintendo Switch</span></div>
+            <div><span class="text-gray-500 block">Publisher:</span> <span class="font-medium text-gray-900">Nintendo Co., Ltd. (任天堂)</span></div>
+            <div><span class="text-gray-500 block">Developer:</span> <span class="font-medium text-gray-900">Camelot Software Planning</span></div>
+            <div><span class="text-gray-500 block">Country/Region of Origin:</span> <span class="font-medium text-gray-900">Japan</span></div>
+            <div><span class="text-gray-500 block">Rating:</span> <span class="font-medium text-gray-900">CERO A (全年齢対象 / All Ages)</span></div>
+            <div><span class="text-gray-500 block">Region Code:</span> <span class="font-medium text-gray-900">Region Free (NTSC-J)</span></div>
+            <div><span class="text-gray-500 block">MPN:</span> <span class="font-medium text-gray-900">HAC-P-AWNCA (JPN)</span></div>
+            <div><span class="text-gray-500 block">JAN / EAN Barcode:</span> <span class="font-medium text-gray-900">4902370547955</span></div>
+            <div><span class="text-gray-500 block">Supported Languages:</span> <span class="font-medium text-gray-900">Japanese, English, Spanish, French, German, Italian, Korean, Chinese</span></div>
+          </div>
+        </div>
+
+        <!-- Rich Editorial Description -->
+        <div class="border border-ebayBorder rounded-xl p-6 bg-white shadow-sm space-y-4 text-gray-800 leading-relaxed text-sm">
+          <div class="border-b pb-3 flex items-center justify-between">
+            <h3 class="text-lg font-bold text-gray-900">Seller's Description & Import Notice</h3>
+            <span class="text-xs text-gray-500">Stock ID: #JPN-MGSR-9932</span>
+          </div>
+
+          <p>
+            Konichiwa! Thank you for viewing our listing. We are offering an authentic original Japanese edition physical copy of <strong>Mario Golf: Super Rush (マリオゴルフ スーパーラッシュ)</strong> for the <strong>Nintendo Switch</strong>, direct from Tokyo, Japan!
+          </p>
+
+          <h4 class="font-bold text-gray-900 pt-2">Compatibility Notice:</h4>
+          <div class="bg-blue-50 border-l-4 border-blue-500 p-3 rounded text-xs text-blue-900">
+            <strong>100% Region-Free:</strong> Nintendo Switch cartridges have no regional hardware locking. This Japanese game cartridge will work seamlessly on any Nintendo Switch, Nintendo Switch Lite, or Nintendo Switch OLED console purchased in the US, Europe, or anywhere in the world. Furthermore, it automatically loads with <strong>English voice and in-game text</strong> if your console is set to English!
+          </div>
+
+          <h4 class="font-bold text-gray-900 pt-2">Package Contents:</h4>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>Original Nintendo Switch Japan cartridge (Model HAC-008, Clean gold pins, fully tested).</li>
+            <li>Original Japanese case with official CERO rating label and cover artwork sleeve.</li>
+            <li>Original Japanese internal safety leaflet / inner artwork.</li>
+          </ul>
+
+          <h4 class="font-bold text-gray-900 pt-2">About the Game:</h4>
+          <p>
+            Released worldwide on <strong>June 25, 2021</strong>, <em>Mario Golf: Super Rush</em> represents the latest iteration in Camelot's beloved golf franchise:
+          </p>
+          <ul class="list-disc pl-5 space-y-1">
+            <li><strong>Speed Golf (スピードゴルフ):</strong> Everyone hits at the exact same moment! Sprint across hills and hazards to reach your ball first.</li>
+            <li><strong>Battle Golf (バトルゴルフ):</strong> 9 holes arranged in an open arena obstacle stadium; claim 3 flags to take the crown.</li>
+            <li><strong>Motion & Traditional Controls:</strong> Swing like a real golf club using your Joy-Con or execute precision button shots using the shot gauge and curved trajectory meters.</li>
+            <li><strong>Golf Adventure (ゴルフアドベンチャー):</strong> Level up your Mii with XP, customized gear, and special stats in Mushroom Kingdom country clubs.</li>
+          </ul>
+
+          <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-xs text-yellow-900 mt-4">
+            <strong>Japanese Seller Quality Guarantee:</strong> Japanese pre-owned games are world-renowned for their pristine condition and careful owner handling. This copy has undergone meticulous cleaning and testing before being bagged in archival clear sleeves.
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Shipping & Payments -->
+      <div id="tab-content-shipping" class="hidden py-6 space-y-6">
+        <div class="border border-ebayBorder rounded-xl p-6 bg-white space-y-4">
+          <h3 class="font-bold text-base text-gray-900">International Shipping from Japan</h3>
+          <div class="text-sm text-gray-700 space-y-2">
+            <p><strong>Item Location:</strong> Tokyo, Japan</p>
+            <p><strong>Standard Airmail:</strong> US $7.00 via Japan Post Airmail with tracking (5–9 business days).</p>
+            <p><strong>Expedited Courier:</strong> US $18.00 via DHL Express / FedEx Priority (2–4 business days with signature).</p>
+            <p><strong>Customs & Import Duties:</strong> For US buyers, orders under $800 are typically exempt from customs duty. Tracking number will be uploaded immediately upon dispatch.</p>
+            <p><strong>Packaging:</strong> Sturdy corrugated box with bubble cushion wrap to prevent damage during overseas transport.</p>
+          </div>
+          
+          <hr class="my-4">
+          
+          <h3 class="font-bold text-base text-gray-900">Return Policy</h3>
+          <p class="text-sm text-gray-700">
+            30-day money-back guarantee. If you encounter any read errors or damage during flight transit, please message us directly with photos for an immediate replacement or full refund.
+          </p>
+        </div>
+      </div>
+
+      <!-- Tab 3: Seller Info -->
+      <div id="tab-content-seller" class="hidden py-6 space-y-6">
+        <div class="border border-ebayBorder rounded-xl p-6 bg-white space-y-4">
+          <h3 class="font-bold text-base text-gray-900">About Tokyo_Retro_Vault_Japan</h3>
+          <p class="text-sm text-gray-700">
+            We are an established video game and anime merchandise export shop located in Akihabara, Tokyo. We take great pride in fast communication, bulletproof packaging, and strictly authentic Japanese releases.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-3">
+            <div class="bg-gray-50 p-4 rounded-lg border text-center">
+              <span class="text-2xl font-bold text-gray-900">99.9%</span>
+              <p class="text-xs text-gray-500 mt-1">Positive Customer Feedback</p>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg border text-center">
+              <span class="text-2xl font-bold text-gray-900">&lt; 30 min</span>
+              <p class="text-xs text-gray-500 mt-1">Average Response Time</p>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg border text-center">
+              <span class="text-2xl font-bold text-gray-900">21,000+</span>
+              <p class="text-xs text-gray-500 mt-1">Global Shipments Delivered</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Products / You May Also Like -->
+    <div class="mt-8 border-t border-ebayBorder pt-8">
+      <h3 class="font-bold text-lg text-gray-900 mb-4">Popular Nintendo Switch Imports from Japan</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        <!-- Related Item 1 -->
+        <div class="border border-gray-200 rounded-lg p-3 hover:shadow-md transition bg-white flex flex-col justify-between">
+          <div class="h-36 flex items-center justify-center overflow-hidden mb-2">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=250&q=80" alt="Mario Tennis Aces" class="max-h-full object-contain">
+          </div>
+          <div>
+            <h4 class="text-xs font-medium text-gray-800 line-clamp-2 hover:text-ebayBlue cursor-pointer">Mario Tennis Aces (Japan Import / Multi-Language)</h4>
+            <div class="mt-1 font-bold text-sm text-gray-900">$31.50</div>
+            <div class="text-[11px] text-gray-500">+$6.00 shipping from Japan</div>
+          </div>
+        </div>
+
+        <!-- Related Item 2 -->
+        <div class="border border-gray-200 rounded-lg p-3 hover:shadow-md transition bg-white flex flex-col justify-between">
+          <div class="h-36 flex items-center justify-center overflow-hidden mb-2">
+            <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=250&q=80" alt="Super Mario 3D World" class="max-h-full object-contain">
+          </div>
+          <div>
+            <h4 class="text-xs font-medium text-gray-800 line-clamp-2 hover:text-ebayBlue cursor-pointer">Super Mario 3D World + Fury (Japan NTSC-J)</h4>
+            <div class="mt-1 font-bold text-sm text-gray-900">$38.90</div>
+            <div class="text-[11px] text-gray-500">+$6.00 shipping from Japan</div>
+          </div>
+        </div>
+
+        <!-- Related Item 3 -->
+        <div class="border border-gray-200 rounded-lg p-3 hover:shadow-md transition bg-white flex flex-col justify-between">
+          <div class="h-36 flex items-center justify-center overflow-hidden mb-2">
+            <img src="https://images.unsplash.com/photo-1612287233215-645b23d5eead?auto=format&fit=crop&w=250&q=80" alt="Mario Strikers" class="max-h-full object-contain">
+          </div>
+          <div>
+            <h4 class="text-xs font-medium text-gray-800 line-clamp-2 hover:text-ebayBlue cursor-pointer">Mario Strikers: Battle League (JPN Import)</h4>
+            <div class="mt-1 font-bold text-sm text-gray-900">$33.99</div>
+            <div class="text-[11px] text-gray-500">+$6.00 shipping from Japan</div>
+          </div>
+        </div>
+
+        <!-- Related Item 4 -->
+        <div class="border border-gray-200 rounded-lg p-3 hover:shadow-md transition bg-white flex flex-col justify-between">
+          <div class="h-36 flex items-center justify-center overflow-hidden mb-2">
+            <img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?auto=format&fit=crop&w=250&q=80" alt="Joy-Con Golf Clubs" class="max-h-full object-contain">
+          </div>
+          <div>
+            <h4 class="text-xs font-medium text-gray-800 line-clamp-2 hover:text-ebayBlue cursor-pointer">Japanese Edition Joy-Con Golf Club Grips</h4>
+            <div class="mt-1 font-bold text-sm text-gray-900">$16.50</div>
+            <div class="text-[11px] text-gray-500">Free international shipping</div>
+          </div>
+        </div>
+
+        <!-- Related Item 5 -->
+        <div class="border border-gray-200 rounded-lg p-3 hover:shadow-md transition bg-white flex flex-col justify-between">
+          <div class="h-36 flex items-center justify-center overflow-hidden mb-2">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=250&q=80" alt="Nintendo Switch Sports" class="max-h-full object-contain">
+          </div>
+          <div>
+            <h4 class="text-xs font-medium text-gray-800 line-clamp-2 hover:text-ebayBlue cursor-pointer">Nintendo Switch Sports (Japan CIB)</h4>
+            <div class="mt-1 font-bold text-sm text-gray-900">$35.00</div>
+            <div class="text-[11px] text-gray-500">+$6.00 shipping from Japan</div>
+          </div>
+        </div>
+
+        <!-- Related Item 6 -->
+        <div class="border border-gray-200 rounded-lg p-3 hover:shadow-md transition bg-white flex flex-col justify-between">
+          <div class="h-36 flex items-center justify-center overflow-hidden mb-2">
+            <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=250&q=80" alt="Mario Kart 8 Deluxe" class="max-h-full object-contain">
+          </div>
+          <div>
+            <h4 class="text-xs font-medium text-gray-800 line-clamp-2 hover:text-ebayBlue cursor-pointer">Mario Kart 8 Deluxe (Japanese Edition)</h4>
+            <div class="mt-1 font-bold text-sm text-gray-900">$41.00</div>
+            <div class="text-[11px] text-gray-500">+$6.00 shipping from Japan</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- eBay Cart Slide-out / Modal Simulator -->
+  <div id="cart-modal" class="fixed inset-0 z-50 bg-black/60 hidden backdrop-blur-xs flex justify-end">
+    <div class="w-full max-w-md bg-white h-full shadow-2xl flex flex-col justify-between p-6 overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between border-b pb-4">
+          <div class="flex items-center space-x-2">
+            <i class="ph-bold ph-shopping-cart text-xl text-ebayBlue"></i>
+            <h2 class="text-lg font-bold text-gray-900">Shopping Cart (<span id="modal-cart-qty">0</span>)</h2>
+          </div>
+          <button onclick="closeCartModal()" class="text-gray-400 hover:text-black text-2xl font-bold">&times;</button>
+        </div>
+
+        <div id="cart-empty-view" class="py-12 text-center">
+          <i class="ph-light ph-shopping-bag text-5xl text-gray-300"></i>
+          <p class="text-gray-500 mt-3 text-sm">Your cart is currently empty.</p>
+        </div>
+
+        <div id="cart-items-view" class="hidden py-4 space-y-4">
+          <div class="flex gap-4 border-b pb-4">
+            <img src="https://austinzimmermann.github.io/www.ebay.com/images/mario-golf-super-rush-nsw-jpn/front.png" alt="Cart item" class="w-16 h-20 object-contain rounded border" onerror="this.src='https://placehold.co/100x100/107c10/ffffff?text=Cart'">
+            <div class="flex-1 text-xs">
+              <h5 class="font-bold text-gray-900">Mario Golf: Super Rush - Nintendo Switch (Japan Import)</h5>
+              <div class="text-gray-500 mt-1">Condition: Very Good</div>
+              <div class="text-gray-500">Seller: Tokyo_Retro_Vault_Japan</div>
+              <div class="text-sm font-bold text-gray-900 mt-2">$36.50</div>
+            </div>
+            <button onclick="removeItemFromCart()" class="text-gray-400 hover:text-red-600 text-sm">
+              <i class="ph-bold ph-trash"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="cart-footer" class="border-t pt-4 hidden">
+        <div class="flex justify-between text-sm mb-1 text-gray-600">
+          <span>Subtotal</span>
+          <span class="font-semibold text-gray-900">$36.50</span>
+        </div>
+        <div class="flex justify-between text-sm mb-4 text-gray-600">
+          <span>Estimated shipping (Tokyo to US)</span>
+          <span class="font-semibold text-gray-900">$7.00</span>
+        </div>
+        <div class="flex justify-between text-base font-bold text-gray-900 mb-4 pt-2 border-t">
+          <span>Total</span>
+          <span class="text-ebayBlue">$43.50</span>
+        </div>
+        <button onclick="checkoutMock()" class="w-full bg-ebayBlue hover:bg-ebayBlueHover text-white font-bold py-3 rounded-full text-sm">
+          Go to checkout
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Standard eBay-style Footer -->
+  <footer class="mt-16 bg-gray-100 border-t border-ebayBorder text-xs text-gray-600 py-10">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 pb-8 border-b border-gray-200">
+        <div>
+          <h5 class="font-bold text-gray-900 mb-3">Buy</h5>
+          <ul class="space-y-1.5">
+            <li><a href="#" class="hover:underline">Registration</a></li>
+            <li><a href="#" class="hover:underline">eBay Money Back Guarantee</a></li>
+            <li><a href="#" class="hover:underline">Bidding & buying help</a></li>
+            <li><a href="#" class="hover:underline">Stores</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold text-gray-900 mb-3">Sell</h5>
+          <ul class="space-y-1.5">
+            <li><a href="#" class="hover:underline">Start selling</a></li>
+            <li><a href="#" class="hover:underline">Learn to sell</a></li>
+            <li><a href="#" class="hover:underline">Affiliates</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold text-gray-900 mb-3">Stay connected</h5>
+          <ul class="space-y-1.5">
+            <li><a href="#" class="hover:underline">eBay's Blogs</a></li>
+            <li><a href="#" class="hover:underline">Facebook</a></li>
+            <li><a href="#" class="hover:underline">Twitter / X</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold text-gray-900 mb-3">About eBay</h5>
+          <ul class="space-y-1.5">
+            <li><a href="#" class="hover:underline">Company info</a></li>
+            <li><a href="#" class="hover:underline">News</a></li>
+            <li><a href="#" class="hover:underline">Investors</a></li>
+            <li><a href="#" class="hover:underline">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold text-gray-900 mb-3">Help & Contact</h5>
+          <ul class="space-y-1.5">
+            <li><a href="#" class="hover:underline">Seller Information Center</a></li>
+            <li><a href="#" class="hover:underline">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col md:flex-row items-center justify-between text-gray-500 gap-4">
+        <p>Copyright © 1995-2026 eBay Inc. All Rights Reserved. Accessibility, User Agreement, Privacy, Payments Terms of Use, Cookies, and AdChoice.</p>
+        <div class="flex items-center space-x-2">
+          <span class="inline-block w-2 h-2 rounded-full bg-green-500"></span>
+          <span>United States (en-US)</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript logic -->
+  <script>
+    // State management
+    let cartCount = 0;
+    let isWatching = false;
+
+    // Gallery images pointing to the specified Japan release URLs
+    const photos = [
+      "https://austinzimmermann.github.io/www.ebay.com/images/mario-golf-super-rush-nsw-jpn/front.png",
+      "https://austinzimmermann.github.io/www.ebay.com/images/mario-golf-super-rush-nsw-jpn/back.png",
+      "https://austinzimmermann.github.io/www.ebay.com/images/mario-golf-super-rush-nsw-jpn/front.png",
+      "https://austinzimmermann.github.io/www.ebay.com/images/mario-golf-super-rush-nsw-jpn/back.png"
+    ];
+
+    function changePhoto(index, element) {
+      const mainImg = document.getElementById('main-product-img');
+      mainImg.src = photos[index];
+
+      // Highlight thumbnail
+      document.querySelectorAll('.thumbnail-btn').forEach(btn => {
+        btn.classList.remove('border-ebayBlue', 'border-2');
+        btn.classList.add('border-gray-200', 'border');
+      });
+      element.classList.remove('border-gray-200', 'border');
+      element.classList.add('border-ebayBlue', 'border-2');
+    }
+
+    // Tab Switching
+    function switchTab(tabId) {
+      const tabs = ['description', 'shipping', 'seller'];
+      tabs.forEach(tab => {
+        const content = document.getElementById(`tab-content-${tab}`);
+        const btn = document.getElementById(`tab-btn-${tab}`);
+        if (tab === tabId) {
+          content.classList.remove('hidden');
+          btn.classList.add('tab-active');
+          btn.classList.remove('text-gray-500');
+        } else {
+          content.classList.add('hidden');
+          btn.classList.remove('tab-active');
+          btn.classList.add('text-gray-500');
+        }
+      });
+    }
+
+    // Watchlist interaction
+    function toggleWatchlist() {
+      isWatching = !isWatching;
+      const favIcon = document.getElementById('fav-icon');
+      const btnText = document.getElementById('watchlist-btn-text');
+
+      if (isWatching) {
+        favIcon.className = "ph-fill ph-heart text-ebayRed text-lg";
+        btnText.innerText = "Watching (Remove)";
+        showToast("Added to your Watchlist!", "ph-fill ph-heart text-ebayRed");
+      } else {
+        favIcon.className = "ph-bold ph-heart text-lg";
+        btnText.innerText = "Add to Watchlist";
+        showToast("Removed from your Watchlist", "ph-bold ph-info text-blue-400");
+      }
+    }
+
+    // Cart actions
+    function handleAddToCart() {
+      cartCount = 1;
+      updateCartDisplay();
+      showToast("Added to cart! (Mario Golf: Super Rush JPN)", "ph-bold ph-shopping-cart-simple text-green-400");
+    }
+
+    function handleBuyNow() {
+      cartCount = 1;
+      updateCartDisplay();
+      openCartModal();
+    }
+
+    function removeItemFromCart() {
+      cartCount = 0;
+      updateCartDisplay();
+      showToast("Item removed from your cart", "ph-bold ph-trash text-yellow-400");
+    }
+
+    function updateCartDisplay() {
+      document.getElementById('cart-counter').innerText = cartCount;
+      document.getElementById('modal-cart-qty').innerText = cartCount;
+      
+      const emptyView = document.getElementById('cart-empty-view');
+      const itemsView = document.getElementById('cart-items-view');
+      const footerView = document.getElementById('cart-footer');
+
+      if (cartCount > 0) {
+        emptyView.classList.add('hidden');
+        itemsView.classList.remove('hidden');
+        footerView.classList.remove('hidden');
+      } else {
+        emptyView.classList.remove('hidden');
+        itemsView.classList.add('hidden');
+        footerView.classList.add('hidden');
+      }
+    }
+
+    function openCartModal() {
+      document.getElementById('cart-modal').classList.remove('hidden');
+    }
+
+    function closeCartModal() {
+      document.getElementById('cart-modal').classList.add('hidden');
+    }
+
+    function checkoutMock() {
+      showToast("Proceeding to secure checkout...", "ph-bold ph-lock-key text-blue-400");
+      setTimeout(() => {
+        closeCartModal();
+      }, 1500);
+    }
+
+    // Toast notification helper
+    function showToast(message, iconClass) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-message');
+      const toastIcon = document.getElementById('toast-icon');
+
+      toastMsg.innerText = message;
+      toastIcon.className = `${iconClass} text-xl`;
+
+      toast.classList.remove('translate-x-full');
+      setTimeout(() => {
+        toast.classList.add('translate-x-full');
+      }, 3000);
+    }
+
+    // Close modal when clicking outside
+    document.getElementById('cart-modal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeCartModal();
+      }
+    });
+  </script>
+</body>
+</html>
