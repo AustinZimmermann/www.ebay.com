@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Fox Zero - Nintendo Wii U [Japan Import] Brand New Sealed | eBay</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ebayBlue: '#3665f3',
+            ebayDarkBlue: '#0053a0',
+            ebayYellow: '#f5af02',
+            ebayRed: '#e53238',
+            ebayGreen: '#28872c',
+            ebayGrayText: '#707070',
+            ebayBorder: '#e5e5e5',
+            ebayHover: '#f7f7f7'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      background-color: #ffffff;
+      color: #191919;
+    }
+    .lens-zoom-container {
+      position: relative;
+      overflow: hidden;
+      cursor: crosshair;
+    }
+    .zoom-img {
+      transition: transform 0.2s ease-out;
+      transform-origin: center center;
+    }
+    /* Toast transition */
+    #toast-notification {
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+    }
+    /* Scrollbar for thumbnails */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+
+  <!-- Schema.org Product JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Star Fox Zero - Nintendo Wii U (Japan Import)",
+    "image": [
+      "https://austinzimmermann.github.io/www.ebay.com/images/star-fox-zero-wii-u-japan-import/front.png",
+      "https://austinzimmermann.github.io/www.ebay.com/images/star-fox-zero-wii-u-japan-import/back.png"
+    ],
+    "description": "Authentic Japanese release of Star Fox Zero for the Nintendo Wii U console. Brand new, factory sealed in original retail box. Ships expedited from Tokyo, Japan.",
+    "sku": "WIIU-SFZ-JPN-NEW",
+    "mpn": "WUP-P-AFXJ",
+    "brand": {
+      "@type": "Brand",
+      "name": "Nintendo"
+    },
+    "releaseDate": "2016-04-21",
+    "itemCondition": "https://schema.org/NewCondition",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.ebay.com/itm/star-fox-zero-wii-u-japan-import",
+      "priceCurrency": "USD",
+      "price": "42.99",
+      "priceValidUntil": "2026-12-31",
+      "availability": "https://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition",
+      "seller": {
+        "@type": "Person",
+        "name": "TokyoRetroGames_JP"
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "12.00",
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "US"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 1,
+            "maxValue": 2,
+            "unitCode": "d"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 3,
+            "maxValue": 6,
+            "unitCode": "d"
+          }
+        }
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "184"
+    }
+  }
+  </script>
+</head>
+
+<body class="bg-white text-neutral-900 text-sm">
+
+  <!-- Toast Notification -->
+  <div id="toast-notification" class="fixed top-5 right-5 z-50 transform translate-y-[-120%] opacity-0 pointer-events-none transition-all duration-300 max-w-sm w-full bg-white border border-gray-200 shadow-xl rounded-xl p-4 flex items-start space-x-3">
+    <div id="toast-icon" class="text-green-600 mt-0.5">
+      <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+      </svg>
+    </div>
+    <div class="flex-1">
+      <p id="toast-title" class="font-semibold text-gray-900 text-sm">Success</p>
+      <p id="toast-desc" class="text-xs text-gray-600 mt-0.5">Item updated.</p>
+    </div>
+    <button onclick="dismissToast()" class="text-gray-400 hover:text-gray-600" aria-label="Close notification">
+      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+    </button>
+  </div>
+
+  <!-- Top Global Header Utility Bar -->
+  <header class="border-b border-ebayBorder bg-white text-xs text-gray-600">
+    <div class="max-w-[1280px] mx-auto px-4 py-1.5 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <span>Hi! <a href="#" class="text-ebayBlue hover:underline font-medium">Sign in</a> or <a href="#" class="text-ebayBlue hover:underline">register</a></span>
+        <span class="hidden sm:inline">|</span>
+        <a href="#" class="hidden sm:inline hover:underline text-gray-700">Daily Deals</a>
+        <a href="#" class="hidden sm:inline hover:underline text-gray-700">Help &amp; Contact</a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="#" class="hidden md:inline hover:underline">Ship to: <strong>🇺🇸 United States</strong></a>
+        <a href="#" class="hover:underline">Sell</a>
+        <div class="relative group cursor-pointer flex items-center">
+          <span class="hover:underline">Watchlist</span>
+          <svg class="w-3 h-3 ml-1 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/></svg>
+        </div>
+        <div class="relative group cursor-pointer flex items-center">
+          <span class="hover:underline">My eBay</span>
+          <svg class="w-3 h-3 ml-1 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/></svg>
+        </div>
+        <div class="relative cursor-pointer p-1">
+          <svg class="w-5 h-5 text-gray-700 hover:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+          <span id="cart-counter-badge" class="absolute -top-1 -right-1 bg-ebayRed text-white text-[10px] font-bold px-1.5 py-0.2 rounded-full hidden">0</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main eBay Navigation / Search Bar -->
+    <div class="border-t border-gray-100 py-3">
+      <div class="max-w-[1280px] mx-auto px-4 flex items-center justify-between gap-4">
+        <!-- Logo -->
+        <a href="#" class="flex-shrink-0 flex items-center" aria-label="eBay Home">
+          <span class="text-3xl font-extrabold tracking-tighter" style="font-family: Arial, sans-serif;">
+            <span class="text-[#e53238]">e</span><span class="text-[#0064d2]">b</span><span class="text-[#f5af02]">a</span><span class="text-[#86b817]">y</span>
+          </span>
+        </a>
+
+        <!-- Category Dropdown -->
+        <button class="hidden lg:flex items-center text-xs text-gray-700 hover:text-ebayBlue whitespace-nowrap pl-1 font-medium">
+          <span>Shop by category</span>
+          <svg class="w-3 h-3 ml-1 fill-current" viewBox="0 0 20 20"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/></svg>
+        </button>
+
+        <!-- Search Input -->
+        <div class="flex-1 flex max-w-3xl">
+          <div class="relative flex-1 flex border-2 border-neutral-900 rounded-l-full overflow-hidden bg-white">
+            <span class="pl-3.5 flex items-center text-gray-400">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            </span>
+            <input type="text" value="Star Fox Zero Wii U Japan" class="w-full py-2 px-3 text-sm focus:outline-none" placeholder="Search for anything" />
+            <select class="hidden sm:block border-l border-gray-200 bg-gray-50 text-xs px-3 py-2 text-gray-600 focus:outline-none">
+              <option>Video Games &amp; Consoles</option>
+              <option>All Categories</option>
+            </select>
+          </div>
+          <button class="bg-ebayBlue hover:bg-ebayDarkBlue text-white font-medium px-7 text-sm rounded-r-full transition">
+            Search
+          </button>
+        </div>
+
+        <a href="#" class="hidden xl:inline text-xs text-gray-500 hover:text-ebayBlue">Advanced</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs & Category Bar -->
+  <nav class="bg-white border-b border-ebayBorder" aria-label="Breadcrumb">
+    <div class="max-w-[1280px] mx-auto px-4 py-2 flex items-center text-xs text-gray-500 overflow-x-auto whitespace-nowrap">
+      <a href="#" class="hover:underline">eBay</a>
+      <span class="mx-1.5 text-gray-400">&gt;</span>
+      <a href="#" class="hover:underline">Video Games &amp; Consoles</a>
+      <span class="mx-1.5 text-gray-400">&gt;</span>
+      <a href="#" class="hover:underline">Video Games</a>
+      <span class="mx-1.5 text-gray-400">&gt;</span>
+      <span class="text-gray-800 font-medium">Star Fox Zero (Nintendo Wii U, 2016, Japan Import)</span>
+    </div>
+  </nav>
+
+  <!-- Main Listing Viewport -->
+  <main class="max-w-[1280px] mx-auto px-4 py-6">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+      <!-- LEFT COLUMN: Image Gallery (5 cols on lg) -->
+      <section class="lg:col-span-5 flex flex-col-reverse md:flex-row gap-4" aria-label="Photo Gallery">
+        
+        <!-- Thumbnails Column -->
+        <div class="flex md:flex-col gap-3 overflow-x-auto md:overflow-y-auto no-scrollbar md:w-20 flex-shrink-0">
+          <button onclick="switchImage('front', this)" class="thumb-btn active border-2 border-ebayBlue rounded-md p-1 bg-white hover:opacity-90 focus:outline-none transition w-16 h-20 md:w-20 md:h-24 flex items-center justify-center shadow-sm">
+            <img src="https://austinzimmermann.github.io/www.ebay.com/images/star-fox-zero-wii-u-japan-import/front.png" alt="Front Cover Thumbnail" class="object-contain max-h-full max-w-full rounded" onerror="this.src='https://placehold.co/100x120/f0f0f0/333333?text=Front'"/>
+          </button>
+          <button onclick="switchImage('back', this)" class="thumb-btn border border-gray-200 rounded-md p-1 bg-white hover:border-gray-400 focus:outline-none transition w-16 h-20 md:w-20 md:h-24 flex items-center justify-center shadow-sm">
+            <img src="https://austinzimmermann.github.io/www.ebay.com/images/star-fox-zero-wii-u-japan-import/back.png" alt="Back Cover Thumbnail" class="object-contain max-h-full max-w-full rounded" onerror="this.src='https://placehold.co/100x120/f0f0f0/333333?text=Back'"/>
+          </button>
+        </div>
+
+        <!-- Main Zoomable Hero Image Viewport -->
+        <div class="flex-1 flex flex-col items-center">
+          <div id="zoom-container" class="lens-zoom-container w-full h-[400px] md:h-[500px] border border-gray-200 rounded-lg bg-[#fafafa] flex items-center justify-center relative p-3 group select-none shadow-sm">
+            
+            <img 
+              id="main-product-image" 
+              src="https://austinzimmermann.github.io/www.ebay.com/images/star-fox-zero-wii-u-japan-import/front.png" 
+              alt="Star Fox Zero - Nintendo Wii U Japan Import Front" 
+              class="zoom-img max-h-full max-w-full object-contain filter drop-shadow-md rounded"
+              onerror="this.src='https://placehold.co/600x700/f0f0f0/333333?text=Star+Fox+Zero+Wii+U'"
+            />
+
+            <!-- Hover overlay indicator -->
+            <div class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm text-[11px] text-gray-700 px-2.5 py-1 rounded-full border border-gray-200 flex items-center space-x-1.5 shadow-sm opacity-90 pointer-events-none">
+              <svg class="w-3.5 h-3.5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+              <span>Hover or tap to zoom</span>
+            </div>
+
+            <!-- Image switch indicator pill -->
+            <span id="image-badge" class="absolute top-3 right-3 bg-black/60 text-white text-[11px] px-2 py-0.5 rounded font-mono">1 / 2</span>
+          </div>
+
+          <div class="mt-3 flex items-center justify-center space-x-4 text-xs text-gray-500">
+            <button onclick="triggerShare()" class="hover:text-ebayBlue flex items-center space-x-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+              <span>Share</span>
+            </button>
+            <span>•</span>
+            <button onclick="toggleWatchlist(this)" id="watchlist-btn" class="hover:text-ebayBlue flex items-center space-x-1">
+              <svg id="watch-heart" class="w-4 h-4 text-gray-400 fill-none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+              <span id="watch-text">Add to Watchlist</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- MIDDLE COLUMN: Title, Pricing, Actions (4.5 cols on lg) -->
+      <section class="lg:col-span-4 flex flex-col justify-start">
+        
+        <!-- Product Header Title -->
+        <h1 class="text-xl md:text-2xl font-bold leading-snug text-gray-900 mb-2">
+          Star Fox Zero - Nintendo Wii U [Japan Import] Brand New Factory Sealed (スターフォックス ゼロ)
+        </h1>
+
+        <!-- Rating & Reviews line -->
+        <div class="flex items-center space-x-2 text-xs mb-3 pb-3 border-b border-gray-100">
+          <div class="flex text-amber-400">
+            <span>★★★★★</span>
+          </div>
+          <a href="#reviews" class="text-ebayBlue hover:underline font-semibold">4.9</a>
+          <span class="text-gray-400">|</span>
+          <a href="#reviews" class="text-ebayBlue hover:underline">184 product ratings</a>
+        </div>
+
+        <!-- Condition Box -->
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-3 mb-4">
+          <div class="flex items-start justify-between">
+            <div>
+              <span class="text-xs text-gray-500 uppercase font-semibold">Condition:</span>
+              <p class="font-bold text-gray-900 text-sm">Brand New</p>
+              <p class="text-xs text-gray-600 mt-0.5">"Brand new, 100% genuine Japanese retail game. Factory shrink-wrap intact. Collector grade."</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Price Section -->
+        <div class="mb-4 bg-blue-50/40 rounded-lg p-3 border border-blue-100">
+          <div class="flex items-baseline space-x-2">
+            <span class="text-xs text-gray-500">Price:</span>
+            <span class="text-3xl font-extrabold text-neutral-900 tracking-tight">US $42.99</span>
+            <span class="text-xs text-gray-500 font-normal">(approx. ¥6,450 JPY)</span>
+          </div>
+          <p class="text-xs text-ebayGreen font-semibold mt-1 flex items-center">
+            <svg class="w-3.5 h-3.5 mr-1 fill-current" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            In Stock -- 4 available / 16 sold
+          </p>
+        </div>
+
+        <!-- Quantity & Buyer Action Buttons -->
+        <div class="space-y-3 mb-6">
+          <div class="flex items-center space-x-4 mb-2">
+            <label for="quantity-input" class="text-xs font-semibold text-gray-700">Quantity:</label>
+            <div class="flex items-center border border-gray-300 rounded-md bg-white">
+              <button onclick="adjustQty(-1)" class="px-2.5 py-1 text-gray-600 hover:bg-gray-100 text-base font-medium rounded-l focus:outline-none" aria-label="Decrease quantity">-</button>
+              <input id="quantity-input" type="number" min="1" max="4" value="1" readonly class="w-12 text-center text-sm font-semibold text-gray-800 focus:outline-none bg-transparent" />
+              <button onclick="adjustQty(1)" class="px-2.5 py-1 text-gray-600 hover:bg-gray-100 text-base font-medium rounded-r focus:outline-none" aria-label="Increase quantity">+</button>
+            </div>
+            <span class="text-xs text-gray-500">More than 70% sold</span>
+          </div>
+
+          <!-- Buy It Now Button -->
+          <button onclick="handleBuyItNow()" class="w-full bg-ebayBlue hover:bg-ebayDarkBlue text-white font-bold py-3 px-4 rounded-full text-sm shadow transition-all duration-150 flex items-center justify-center space-x-2">
+            <span>Buy It Now</span>
+          </button>
+
+          <!-- Add to Cart Button -->
+          <button onclick="handleAddToCart()" class="w-full bg-[#3665f3]/10 hover:bg-[#3665f3]/20 text-ebayBlue border border-ebayBlue font-bold py-3 px-4 rounded-full text-sm transition-all duration-150 flex items-center justify-center space-x-2">
+            <span>Add to cart</span>
+          </button>
+
+          <!-- Add to Watchlist Outline -->
+          <button onclick="toggleWatchlist(this)" class="w-full border border-gray-300 hover:bg-gray-50 text-gray-800 font-semibold py-2.5 px-4 rounded-full text-xs transition flex items-center justify-center space-x-2">
+            <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+            <span class="watchlist-cta-text">Add to Watchlist</span>
+          </button>
+        </div>
+
+        <!-- Shipping & Returns Summary -->
+        <div class="border-t border-gray-200 pt-4 text-xs space-y-2.5 text-gray-700">
+          <div class="flex items-start">
+            <span class="w-24 text-gray-500 font-medium">Shipping:</span>
+            <div>
+              <p class="font-bold text-gray-900">US $12.00 (Expedited Shipping from Japan)</p>
+              <p class="text-gray-500 mt-0.5">International tracking provided by Japan Post / DHL Express.</p>
+              <p class="text-gray-500">Estimated delivery: <span class="font-medium text-gray-800">4–7 business days</span> to United States</p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <span class="w-24 text-gray-500 font-medium">Delivery:</span>
+            <div>
+              <p class="text-gray-800">Ships from <span class="font-medium">Tokyo, Japan</span></p>
+              <p class="text-gray-500 text-[11px]">Seller ships within 1 business day after receiving cleared payment.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <span class="w-24 text-gray-500 font-medium">Returns:</span>
+            <span class="text-gray-800">30 days free returns. Buyer pays for return shipping.</span>
+          </div>
+
+          <div class="flex items-start">
+            <span class="w-24 text-gray-500 font-medium">Payments:</span>
+            <div class="flex flex-wrap items-center gap-1.5">
+              <span class="border border-gray-200 px-1.5 py-0.5 rounded font-mono text-[10px] bg-white">PayPal</span>
+              <span class="border border-gray-200 px-1.5 py-0.5 rounded font-mono text-[10px] bg-white">Visa</span>
+              <span class="border border-gray-200 px-1.5 py-0.5 rounded font-mono text-[10px] bg-white">Mastercard</span>
+              <span class="border border-gray-200 px-1.5 py-0.5 rounded font-mono text-[10px] bg-white">Amex</span>
+              <span class="border border-gray-200 px-1.5 py-0.5 rounded font-mono text-[10px] bg-white">Apple Pay</span>
+              <span class="border border-gray-200 px-1.5 py-0.5 rounded font-mono text-[10px] bg-white">Google Pay</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- RIGHT COLUMN: Seller Information & Protection (2.5 cols on lg) -->
+      <section class="lg:col-span-3 flex flex-col space-y-4">
+        
+        <!-- Seller Card -->
+        <div class="border border-gray-200 rounded-xl p-4 bg-white shadow-xs">
+          <h2 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-2">Seller Information</h2>
+          <div class="flex items-center justify-between">
+            <div>
+              <a href="#" class="font-bold text-ebayBlue text-sm hover:underline">TokyoRetroGames_JP</a>
+              <span class="text-xs text-gray-500">(15,820)</span>
+            </div>
+          </div>
+          <div class="mt-2 text-xs text-gray-700">
+            <p class="text-ebayGreen font-semibold">99.8% Positive Feedback</p>
+            <p class="text-gray-500 mt-1">Top Rated Plus Seller based in Japan</p>
+          </div>
+          <hr class="my-3 border-gray-100" />
+          <div class="space-y-1.5 text-xs text-ebayBlue font-medium">
+            <a href="#" class="block hover:underline flex items-center space-x-1.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
+              <span>Save this seller</span>
+            </a>
+            <a href="#" class="block hover:underline flex items-center space-x-1.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+              <span>Contact seller</span>
+            </a>
+            <a href="#" class="block hover:underline flex items-center space-x-1.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+              <span>Visit store: Tokyo Collectibles</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- eBay Money Back Guarantee -->
+        <div class="border border-blue-200 bg-blue-50/30 rounded-xl p-4">
+          <div class="flex items-start space-x-3">
+            <div class="text-ebayBlue mt-0.5">
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            </div>
+            <div>
+              <p class="font-bold text-gray-900 text-xs uppercase tracking-wider">eBay Money Back Guarantee</p>
+              <p class="text-xs text-gray-600 mt-1">Get the item you ordered or your money back. Covers purchase price plus original shipping on eligible purchases.</p>
+              <a href="#" class="text-xs text-ebayBlue font-medium hover:underline mt-1.5 inline-block">See terms &amp; conditions</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Japan Region Lock Compatibility Notice -->
+        <div class="border border-amber-200 bg-amber-50/60 rounded-xl p-4 text-xs">
+          <div class="flex items-start space-x-2.5">
+            <span class="text-amber-600 text-base font-bold">⚠️</span>
+            <div>
+              <p class="font-bold text-amber-900">Important: Regional Compatibility</p>
+              <p class="text-amber-800 mt-0.5 leading-relaxed">
+                This is a <strong>NTSC-J (Japan)</strong> Wii U disc. Nintendo Wii U hardware is region-locked. You must use a Japanese Wii U console or a region-unlocked system to play.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+    <!-- Product Specifics & Detailed Info Section -->
+    <section class="mt-12 border-t border-gray-200 pt-8" aria-label="Item Specifics and Description">
+      
+      <!-- Tab Navigation -->
+      <div class="flex border-b border-gray-200 space-x-8 text-sm font-semibold">
+        <button id="tab-btn-specifics" onclick="switchTab('specifics')" class="pb-3 border-b-2 border-ebayBlue text-ebayBlue focus:outline-none transition">
+          Item Specifics &amp; Details
+        </button>
+        <button id="tab-btn-description" onclick="switchTab('description')" class="pb-3 border-b-2 border-transparent text-gray-500 hover:text-gray-800 focus:outline-none transition">
+          Description
+        </button>
+        <button id="tab-btn-shipping" onclick="switchTab('shipping')" class="pb-3 border-b-2 border-transparent text-gray-500 hover:text-gray-800 focus:outline-none transition">
+          Shipping, Returns &amp; Payments
+        </button>
+      </div>
+
+      <!-- TAB 1: Item Specifics -->
+      <div id="tab-content-specifics" class="py-6">
+        <h3 class="text-base font-bold text-gray-900 mb-4">Item specifics</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2.5 text-xs">
+          
+          <div class="flex py-1.5 border-b border-gray-100">
+            <span class="w-40 text-gray-500 font-medium">Condition</span>
+            <span class="text-gray-900 font-medium">Brand New: Factory Sealed</span>
+          </div>
+
+          <div class="flex py-1.5 border-b border-gray-100">
+            <span class="w-40 text-gray-500 font-medium">Game Name</span>
+            <span class="text-gray-900 font-medium">Star Fox Zero (スターフォックス ゼロ)</span>
+          </div>
+
+          <div class="flex py-1.5 border-b border-gray-100">
+            <span class="w-40 text-gray-500 font-medium">Platform</span>
+            <span class="text-gray-900 font-medium">Nintendo Wii U</span>
+          </div>
+
+          <div class="flex py-1.5 border-b border-gray-100">
+            <span class="w-40 text-gray-500 font-medium">Release Date</span>
+            <span class="text-gray-900 font-medium">2016-04-21 (April 21, 2016)</span>
+          </div>
+
+          <div class="flex py-1.5 border-b border-gray-100">
+            <span class="w-40 text-gray-500 font-medium">Publisher</span>
+            <span class="text-gray-900 font-medium">Nintendo</span>
+          </div>
+
+          <div class="flex py-1.5 border-b border-gray-100">
+            <span class="w-40 text-gray-500 font-medium">Developer</span>
+            <span class="text-gray-900 font-medium">PlatinumGames / Nintendo EPD</span>
+          </div>
+
+          <div class="flex py-1.5 border-b border-gray-100">
+            <span class="w-40 text-gray-500 font-medium">Region Code</span>
+            <span class="text-gray-900 font-medium">NTSC-J (Japan)</span>
+          </div>
+
+          <div class="flex py-1.5 border-b border-gray-100">
+            <span class="w-40 text-gray-500 font-medium">Genre</span>
+            <span class="text-gray-900 font-medium">Rail Shooter / Action-Adventure</span>
+          </div>
+
+          <div class="flex py-1.5 border-b border-gray-100">
+            <span class="w-40 text-gray-500 font-medium">MPN</span>
+            <span class="text-gray-900 font-mono">WUP-P-AFXJ (JPN)</span>
+          </div>
+
+          <div class="flex py-1.5 border-b border-gray-100">
+            <span class="w-40 text-gray-500 font-medium">Country/Region of Manufacture</span>
+            <span class="text-gray-900 font-medium">Japan</span>
+          </div>
+
+          <div class="flex py-1.5 border-b border-gray-100">
+            <span class="w-40 text-gray-500 font-medium">Rating</span>
+            <span class="text-gray-900 font-medium">CERO A (All Ages)</span>
+          </div>
+
+          <div class="flex py-1.5 border-b border-gray-100">
+            <span class="w-40 text-gray-500 font-medium">Features</span>
+            <span class="text-gray-900 font-medium">Wii U GamePad Dual Cockpit View, amiibo Support</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TAB 2: Description -->
+      <div id="tab-content-description" class="py-6 hidden">
+        <div class="max-w-4xl text-gray-800 leading-relaxed space-y-4 text-sm">
+          <div class="bg-gray-50 p-4 border border-gray-200 rounded-lg">
+            <h4 class="font-bold text-gray-900 text-base mb-2">⭐ Authentic Japanese Release - Brand New &amp; Sealed</h4>
+            <p>
+              Thank you for visiting our eBay store! You are viewing an original, brand new, and sealed physical copy of 
+              <em><strong>Star Fox Zero</strong></em> for the <strong>Nintendo Wii U</strong>, published on <strong>April 21, 2016</strong> in Japan.
+            </p>
+          </div>
+
+          <h4 class="font-bold text-gray-900 text-base pt-2">Game Overview</h4>
+          <p>
+            Co-developed by Nintendo and PlatinumGames, <em>Star Fox Zero</em> returns to the iconic cockpit-style space flight combat 
+            made famous on the SNES and N64. Take flight as Fox McCloud alongside Falco, Peppy, and Slippy in the legendary Arwing! 
+            Utilize the Wii U GamePad for motion-assisted precision targeting from the cockpit perspective while viewing the third-person cinematic action on your TV.
+          </p>
+
+          <h4 class="font-bold text-gray-900 text-base pt-2">Package Details</h4>
+          <ul class="list-disc pl-5 space-y-1.5 text-gray-700">
+            <li>Original factory plastic shrink wrap intact without tears or rips.</li>
+            <li>No sun-fading or spine crushing; stored in a climate-controlled, smoke-free collector environment.</li>
+            <li>Includes Japanese manual leaflet and original disc case.</li>
+            <li>Packed securely inside bubble-wrap and a sturdy corrugated shipping box to ensure mint arrival.</li>
+          </ul>
+
+          <div class="mt-4 p-3 bg-red-50 border border-red-200 rounded-lg text-red-900 text-xs">
+            <strong>Notice on Wii U Region Coding:</strong> This item is an official NTSC-J product. Please confirm that your Wii U console is compatible with Japanese discs before ordering.
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 3: Shipping, Returns & Payments -->
+      <div id="tab-content-shipping" class="py-6 hidden">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
+          <div class="space-y-4">
+            <h4 class="font-bold text-gray-900">Direct Shipping from Tokyo, Japan</h4>
+            <p class="text-xs text-gray-600 leading-relaxed">
+              We provide careful, trackable international handling on every gaming collectible.
+            </p>
+            <table class="w-full text-xs border border-gray-200">
+              <thead class="bg-gray-100 font-semibold text-gray-700">
+                <tr>
+                  <th class="p-2 text-left border-b">Carrier</th>
+                  <th class="p-2 text-left border-b">Estimated Transit</th>
+                  <th class="p-2 text-left border-b">Tracking</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-100">
+                <tr>
+                  <td class="p-2 font-medium">Japan Post EMS / DHL</td>
+                  <td class="p-2">3–6 Business Days</td>
+                  <td class="p-2 text-green-700 font-semibold">Included</td>
+                </tr>
+                <tr>
+                  <td class="p-2 font-medium">Standard Air Packet</td>
+                  <td class="p-2">7–14 Business Days</td>
+                  <td class="p-2 text-green-700 font-semibold">Included</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-bold text-gray-900">Return Policy &amp; Guarantee</h4>
+            <p class="text-xs text-gray-600 leading-relaxed">
+              We stand behind our listings. If the item does not match our photos or description upon arrival, return it within 30 days in its original sealed condition for a full refund under the eBay Money Back Guarantee.
+            </p>
+            <div class="border-t border-gray-100 pt-3">
+              <h5 class="font-semibold text-xs text-gray-800">Customs &amp; Import Duties</h5>
+              <p class="text-xs text-gray-500 mt-1">
+                US buyers generally experience zero customs duties on video games below the de minimis threshold. Any duties or taxes determined by your country's customs office remain the buyer's responsibility.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-16 border-t border-gray-200 bg-gray-50 py-10 text-xs text-gray-500">
+    <div class="max-w-[1280px] mx-auto px-4 text-center sm:text-left space-y-4">
+      <div class="flex flex-wrap justify-center sm:justify-start gap-x-6 gap-y-2">
+        <a href="#" class="hover:underline">About eBay</a>
+        <a href="#" class="hover:underline">Announcements</a>
+        <a href="#" class="hover:underline">Community</a>
+        <a href="#" class="hover:underline">Security Center</a>
+        <a href="#" class="hover:underline">Seller Center</a>
+        <a href="#" class="hover:underline">Policies</a>
+        <a href="#" class="hover:underline">Affiliates</a>
+        <a href="#" class="hover:underline">Help &amp; Contact</a>
+      </div>
+      <p class="text-gray-400">
+        Copyright © 1995-2026 eBay Inc. All Rights Reserved. User Agreement, Privacy, Payments Terms of Use, Cookies and AdChoice.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Gallery, Zoom, Tabs, and Cart UI -->
+  <script>
+    const images = {
+      front: 'https://austinzimmermann.github.io/www.ebay.com/images/star-fox-zero-wii-u-japan-import/front.png',
+      back: 'https://austinzimmermann.github.io/www.ebay.com/images/star-fox-zero-wii-u-japan-import/back.png'
+    };
+
+    let cartCount = 0;
+    let isWatchlisted = false;
+    let toastTimeout = null;
+
+    // Switch photo thumbnail
+    function switchImage(key, buttonElement) {
+      const mainImg = document.getElementById('main-product-image');
+      const badge = document.getElementById('image-badge');
+      
+      if (images[key]) {
+        mainImg.src = images[key];
+        mainImg.alt = "Star Fox Zero Nintendo Wii U " + (key === 'front' ? 'Front Cover' : 'Back Cover');
+        badge.textContent = key === 'front' ? '1 / 2' : '2 / 2';
+      }
+
+      // Update thumbnail active states
+      document.querySelectorAll('.thumb-btn').forEach(btn => {
+        btn.classList.remove('border-ebayBlue', 'border-2');
+        btn.classList.add('border-gray-200', 'border');
+      });
+      buttonElement.classList.remove('border-gray-200');
+      buttonElement.classList.add('border-ebayBlue', 'border-2');
+    }
+
+    // Interactive Zoom Lens on mousemove
+    const zoomContainer = document.getElementById('zoom-container');
+    const mainProductImage = document.getElementById('main-product-image');
+
+    zoomContainer.addEventListener('mousemove', function (e) {
+      const rect = zoomContainer.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+
+      mainProductImage.style.transformOrigin = `${x}% ${y}%`;
+      mainProductImage.style.transform = 'scale(2.0)';
+    });
+
+    zoomContainer.addEventListener('mouseleave', function () {
+      mainProductImage.style.transformOrigin = 'center center';
+      mainProductImage.style.transform = 'scale(1)';
+    });
+
+    // Touch support for mobile tap toggle zoom
+    let mobileZoomed = false;
+    zoomContainer.addEventListener('click', function(e) {
+      if (window.innerWidth < 768) {
+        mobileZoomed = !mobileZoomed;
+        if (mobileZoomed) {
+          mainProductImage.style.transform = 'scale(1.8)';
+        } else {
+          mainProductImage.style.transform = 'scale(1)';
+        }
+      }
+    });
+
+    // Quantity adjuster
+    function adjustQty(delta) {
+      const qtyInput = document.getElementById('quantity-input');
+      let val = parseInt(qtyInput.value) || 1;
+      val += delta;
+      if (val < 1) val = 1;
+      if (val > 4) {
+        showToast('Limit Reached', 'Only 4 copies in stock for this listing.', 'warning');
+        return;
+      }
+      qtyInput.value = val;
+    }
+
+    // Tabs Switcher
+    function switchTab(tabId) {
+      const tabs = ['specifics', 'description', 'shipping'];
+      tabs.forEach(t => {
+        const btn = document.getElementById(`tab-btn-${t}`);
+        const content = document.getElementById(`tab-content-${t}`);
+        if (t === tabId) {
+          btn.classList.remove('border-transparent', 'text-gray-500');
+          btn.classList.add('border-ebayBlue', 'text-ebayBlue');
+          content.classList.remove('hidden');
+        } else {
+          btn.classList.remove('border-ebayBlue', 'text-ebayBlue');
+          btn.classList.add('border-transparent', 'text-gray-500');
+          content.classList.add('hidden');
+        }
+      });
+    }
+
+    // Toast Notification helper
+    function showToast(title, description, type = 'success') {
+      const toast = document.getElementById('toast-notification');
+      const toastTitle = document.getElementById('toast-title');
+      const toastDesc = document.getElementById('toast-desc');
+      const toastIcon = document.getElementById('toast-icon');
+
+      if (toastTimeout) clearTimeout(toastTimeout);
+
+      toastTitle.textContent = title;
+      toastDesc.textContent = description;
+
+      if (type === 'warning') {
+        toastIcon.innerHTML = `<svg class="w-5 h-5 text-amber-500 fill-current" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>`;
+      } else {
+        toastIcon.innerHTML = `<svg class="w-5 h-5 text-green-600 fill-current" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>`;
+      }
+
+      toast.classList.remove('translate-y-[-120%]', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      toastTimeout = setTimeout(() => {
+        dismissToast();
+      }, 4000);
+    }
+
+    function dismissToast() {
+      const toast = document.getElementById('toast-notification');
+      toast.classList.add('translate-y-[-120%]', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }
+
+    // Add to Cart Action
+    function handleAddToCart() {
+      const qty = parseInt(document.getElementById('quantity-input').value) || 1;
+      cartCount += qty;
+      const badge = document.getElementById('cart-counter-badge');
+      badge.textContent = cartCount;
+      badge.classList.remove('hidden');
+
+      showToast('Added to Cart', `Added ${qty} × Star Fox Zero (Wii U Japan) to your cart.`);
+    }
+
+    // Buy It Now Action
+    function handleBuyItNow() {
+      const qty = parseInt(document.getElementById('quantity-input').value) || 1;
+      const total = (qty * 42.99 + 12.00).toFixed(2);
+      showToast('Checkout Initiated', `Proceeding with ${qty} unit(s) - Total: $${total} USD.`);
+    }
+
+    // Watchlist Toggle
+    function toggleWatchlist(btn) {
+      isWatchlisted = !isWatchlisted;
+      const heart = document.getElementById('watch-heart');
+      const watchText = document.getElementById('watch-text');
+      const ctaTexts = document.querySelectorAll('.watchlist-cta-text');
+
+      if (isWatchlisted) {
+        if (heart) {
+          heart.classList.remove('fill-none', 'text-gray-400');
+          heart.classList.add('fill-red-500', 'text-red-500');
+        }
+        if (watchText) watchText.textContent = 'Watching';
+        ctaTexts.forEach(t => t.textContent = 'Watching');
+        showToast('Watchlist Updated', 'Added Star Fox Zero to your Watchlist.');
+      } else {
+        if (heart) {
+          heart.classList.remove('fill-red-500', 'text-red-500');
+          heart.classList.add('fill-none', 'text-gray-400');
+        }
+        if (watchText) watchText.textContent = 'Add to Watchlist';
+        ctaTexts.forEach(t => t.textContent = 'Add to Watchlist');
+        showToast('Watchlist Updated', 'Removed item from your Watchlist.', 'warning');
+      }
+    }
+
+    // Share action
+    function triggerShare() {
+      const shareUrl = window.location.href;
+      if (document.queryCommandSupported && document.queryCommandSupported('copy')) {
+        const dummy = document.createElement('input');
+        document.body.appendChild(dummy);
+        dummy.value = shareUrl;
+        dummy.select();
+        document.execCommand('copy');
+        document.body.removeChild(dummy);
+        showToast('Link Copied', 'Listing URL copied to your clipboard!');
+      } else {
+        showToast('Share Listing', 'Listing is ready to share.');
+      }
+    }
+  </script>
+</body>
+</html>
